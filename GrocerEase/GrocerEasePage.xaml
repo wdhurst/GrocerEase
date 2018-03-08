@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GrocerEase" x:Class="GrocerEase.GrocerEasePage">
-    <Label Text="GrocerEase" Font="Tahoma" VerticalOptions="Top" HorizontalOptions="Center" TextColor="White" BackgroundColor="Black" FontSize="26"/>
-    <ContentView BackgroundColor="Silver"/>
-    <Button Text="Sign me up!" Font="Tahmoa" BackgroundColor="Green" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
+    <StackLayout Margin="20,50,20,50">
+        <Label Text="GrocerEase" HorizontalOptions="Center" FontSize="45" Margin="0,0,0,50"></Label>
+        <Label Text="Email"></Label>
+        <Entry Placeholder="Enter Your Email" x:Name="EmailEntry"></Entry>
+        <Label Text="Password"></Label>
+        <Entry Placeholder="Enter Your Password" x:Name="PasswordEntry"></Entry>
+        <Button Text="Login" x:Name="LogIn" Margin="0,20,0,50"></Button>
+        <Button Text="Don't have an account? Click here to&#10;sign up" x:Name="CustmerSignUp" FontSize="10" BorderColor="Transparent" Margin="0,50,0,0"></Button>
+        <Button Text="Are you a store owner? Click here to&#10;sign up" x:Name="OwnerSignUp" FontSize="10" BorderColor="Transparent"></Button>
+    </StackLayout>
 </ContentPage>
