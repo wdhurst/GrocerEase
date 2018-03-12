@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.CreateAccount">
+<StackLayout Margin="20,50,20,50">
+<Label Text="Email" />
+<Entry x:Name="EmailBox" Placeholder="Enter Your Email"/>
+<Label Text="Password" />
+<Entry x:Name="PasswordBox" Placeholder="Enter Your Password"/>
+<Label Text="Confirm Password" />
+<Entry x:Name="PassConfirmBox" Placeholder="Re-Enter Your Password"/>
+<Button x:Name="CreateButton" Text="Create Account"/>
+<Button x:Name="LoginPage" Text="Already have an account? Click here to log in." BackgroundColor="Transparent" FontSize="10"/>
+<Button x:Name="OwnerPage" Text="Are you a store owner? Click here to sign in" BackgroundColor="Transparent" FontSize="10" />
+</StackLayout>
+</ContentPage>
