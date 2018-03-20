@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<!--***Business Management Account***-->
+    
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.CreateAccountOwner">
     <StackLayout Margin="20,50,20,50">
         <Label Text="Email" />
@@ -7,10 +10,10 @@
         <Entry x:Name="PasswordBox" Placeholder="Enter Your Password"/>
         <Label Text="Confirm Password" />
         <Entry x:Name="PassConfirmBox" Placeholder="Re-Enter Your Password"/>
-        <Label Text="Store Name"/>
-        <Entry x:Name="StoreName" Placeholder="Enter Store Name"/>
-        <Label Text="Store Phone Number"/>
-        <Entry x:Name="StoreNum" Placeholder="Enter Phone Number"/>
+        <Label Text="Business Name"/>
+        <Entry x:Name="BusinessName" Placeholder="Enter the Business Name"/>
+        <Label Text="Business Number"/>
+        <Entry x:Name="BusinessNum" Placeholder="Enter Your Business Number"/>
         <Button x:Name="CreateButton" Text="Create Account"/>
         <Button x:Name="LoginPage" Text="Already have an account? Click here to log in." BackgroundColor="Transparent" FontSize="10"/>
         <Button x:Name="OwnerPage" Text="Not a store owner? Click here to sign up" BackgroundColor="Transparent" FontSize="10" />
