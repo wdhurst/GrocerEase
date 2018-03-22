@@ -1,0 +1,24 @@
+Create Page Layouts for all main pages
+  -Sign in Page...In Progress(Jeana)
+  -Create Account Page (Customer)...In Progress(Wyatt)
+  -Create Account Page (Owner)...Open
+  -Default Page/Home Screen (Customer)...Open
+  -Default Page/Home Screen (Owner)...Open
+  -Create New Layout Screen (Owner)...Open
+  -Create New List Screen (Customer)...Open
+  -Inventory Page (Owner)...Open
+  -Saved Lists (Customer)...Open
+  -Create New Item (Owner)...Open
+  -Notifications (Customer)...Open
+Link all pages together via navigation buttons in c# help: bttnName.clicked += bttnName_Clicked; (creates instance) Navigation.PushAsync(new pageName()); (opens said page)
+   -Sign in Page...In Progress(Wyatt)
+  -Create Account Page (Customer)...In Progress(Wyatt)
+  -Create Account Page (Owner)...Open
+  -Default Page/Home Screen (Customer)...Open
+  -Default Page/Home Screen (Owner)...Open
+  -Create New Layout Screen (Owner)...Open
+  -Create New List Screen (Customer)...Open
+  -Inventory Page (Owner)...Open
+  -Saved Lists (Customer)...Open
+  -Create New Item (Owner)...Open
+  -Notifications (Customer)...Open
