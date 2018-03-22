@@ -1,5 +1,5 @@
 ﻿using System;
-
+using SQLite;
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
@@ -10,6 +10,7 @@ using Android.OS;
 
 namespace GrocerEase.Droid
 {
+    
     [Activity(Label = "GrocerEase.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
@@ -23,6 +24,7 @@ namespace GrocerEase.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             LoadApplication(new App());
+
         }
     }
 }
