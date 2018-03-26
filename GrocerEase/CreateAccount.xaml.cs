@@ -1,5 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
 using Xamarin.Forms;
 namespace GrocerEase
 {
@@ -17,6 +15,7 @@ namespace GrocerEase
             InitializeComponent();
             CreateButton.Clicked += CreateButton_Click;
             LoginPage.Clicked += LoginPage_Clicked;
+            OwnerPage.Clicked += OwnerPage_Clicked;
         }
         void CreateButton_Click(Object sender, EventArgs e)
         {
@@ -39,7 +38,12 @@ namespace GrocerEase
 
         void LoginPage_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new GrocerEasePage());
+            Navigation.PushModalAsync(new GrocerEasePage());
+        }
+
+        void OwnerPage_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new CreateAccountOwner());
         }
 
     }
