@@ -1,4 +1,4 @@
-﻿using Xamarin.Forms;
+using Xamarin.Forms;
 
 namespace GrocerEase
 {
@@ -6,27 +6,28 @@ namespace GrocerEase
     {
         void CustmerSignUp_Clicked(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new CreateAccount());
+            Navigation.PushModalAsync(new CreateAccount());
         }
 
         void LogIn_Clicked(object sender, System.EventArgs e)
         {
             //Check password against matching password in database.
+            //Navigaton.PushModalAsyny(new Home());
+        }
+
+        void OwnerSignUp_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushModalAsync(new CreateAccountOwner());
         }
 
 
         public GrocerEasePage()
         {
             InitializeComponent();
-<<<<<<< HEAD
-			string email = EmailEntry.Text;
-			string password = PasswordEntry.Text;
-			
-=======
             CustmerSignUp.Clicked += CustmerSignUp_Clicked; 
             LogIn.Clicked += LogIn_Clicked;
+            OwnerSignUp.Clicked += OwnerSignUp_Clicked;
 
->>>>>>> 50edc29a4ea86c131c87acd5e436b12290fe3434
         }
     }
 }
