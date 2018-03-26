@@ -5,11 +5,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.CreateAccountOwner">
     <StackLayout Margin="20,50,20,50">
         <Label Text="Email" />
-        <Entry x:Name="EmailBox" Placeholder="Enter Your Email"/>
+        <Entry x:Name="Email" Placeholder="Enter Your Email"/>
         <Label Text="Password" />
-        <Entry x:Name="PasswordBox" Placeholder="Enter Your Password"/>
+        <Entry x:Name="Password" Placeholder="Enter Your Password"/>
         <Label Text="Confirm Password" />
-        <Entry x:Name="PassConfirmBox" Placeholder="Re-Enter Your Password"/>
+        <Entry x:Name="PassConfirm" Placeholder="Re-Enter Your Password"/>
         <Label Text="Business Name"/>
         <Entry x:Name="BusinessName" Placeholder="Enter the Business Name"/>
         <Label Text="Business Number"/>

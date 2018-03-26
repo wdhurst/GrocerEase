@@ -7,6 +7,9 @@ namespace GrocerEase
         public GrocerEasePage()
         {
             InitializeComponent();
+			string email = EmailEntry.Text;
+			string password = PasswordEntry.Text;
+			
         }
     }
 }
