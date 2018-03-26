@@ -5,26 +5,42 @@ namespace GrocerEase
 {
     public partial class CreateAccount : ContentPage
     {
+        class userInfo
+        {
+            public string email;
+            public string password;
+            public bool storeManager;
+            public int userId;
+        }
         public CreateAccount()
         {
             InitializeComponent();
-            string email = EmailBox.Text;
-            string password = PasswordBox.Text;
-            string confirm = PassConfirmBox.Text;
             CreateButton.Clicked += CreateButton_Click;
+            LoginPage.Clicked += LoginPage_Clicked;
         }
         void CreateButton_Click(Object sender, EventArgs e)
         {
+            Dictionary<string, userInfo> users = new Dictionary<string, userInfo>();
+            Random rnd = new Random();
+
             if (PasswordBox.Text == PassConfirmBox.Text)
             {
-                //Also check if E-mail is unique?
                 //Send Confirmation email and show confirmation page
-            }
-            else
-            {
-                //Alert user to reenter passwords and/or use an email that isn't 
-                //already in system
+                try
+                {
+                    users.Add(EmailBox.Text, new userInfo { email = EmailBox.Text, password = PasswordBox.Text, storeManager = false, userId = rnd.Next(9999) });
+                }
+                catch (ArgumentException)
+                {
+                    DisplayAlert("Error", "That email is already linked to an account.", "OK");
+                }
             }
         }
+
+        void LoginPage_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new GrocerEasePage());
+        }
+
     }
 }
