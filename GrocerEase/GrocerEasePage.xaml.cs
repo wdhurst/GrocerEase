@@ -6,12 +6,18 @@ namespace GrocerEase
     {
         void CustmerSignUp_Clicked(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new CreateAccount());
+            Navigation.PushModalAsync(new CreateAccount());
         }
 
         void LogIn_Clicked(object sender, System.EventArgs e)
         {
             //Check password against matching password in database.
+            //Navigaton.PushModalAsyny(new Home());
+        }
+
+        void OwnerSignUp_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushModalAsync(new CreateAccountOwner());
         }
 
 
@@ -20,6 +26,7 @@ namespace GrocerEase
             InitializeComponent();
             CustmerSignUp.Clicked += CustmerSignUp_Clicked; 
             LogIn.Clicked += LogIn_Clicked;
+            OwnerSignUp.Clicked += OwnerSignUp_Clicked;
 
         }
     }
