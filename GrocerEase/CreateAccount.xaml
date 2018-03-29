@@ -12,6 +12,6 @@
         <Entry x:Name="PassConfirmBox" Placeholder="Re-Enter Your Password"/>
         <Button x:Name="CreateButton" Text="Create Account"/>
         <Button x:Name="LoginPage" Text="Already have an account? Click here to log in." BackgroundColor="Transparent" FontSize="10"/>
-        <Button x:Name="OwnerPage" Text="Are you a store owner? Click here to sign up" BackgroundColor="Transparent" FontSize="10" />
+        <Button x:Name="OwnerPage" Text="Are you a business manager? Click here to sign up" BackgroundColor="Transparent" FontSize="10" />
     </StackLayout>
 </ContentPage>

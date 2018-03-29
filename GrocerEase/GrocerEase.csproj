@@ -41,6 +41,9 @@
     <Compile Include="CreateAccountOwner.xaml.cs">
       <DependentUpon>CreateAccountOwner.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomerHome.xaml.cs">
+      <DependentUpon>CustomerHome.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GrocerEasePage.xaml.cs">
       <DependentUpon>GrocerEasePage.xaml</DependentUpon>
     </Compile>
@@ -77,6 +80,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CreateAccountOwner.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomerHome.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

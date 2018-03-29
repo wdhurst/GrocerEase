@@ -9,7 +9,7 @@ namespace GrocerEase
             InitializeComponent();
 
             MainPage = new GrocerEasePage();
-        }
+		}
 
         protected override void OnStart()
         {

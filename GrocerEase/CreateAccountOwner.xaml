@@ -16,6 +16,6 @@
         <Entry x:Name="BusinessNum" Placeholder="Enter Your Business Number"/>
         <Button x:Name="CreateButton" Text="Create Account"/>
         <Button x:Name="LoginPage" Text="Already have an account? Click here to log in." BackgroundColor="Transparent" FontSize="10"/>
-        <Button x:Name="Customer" Text="Not a store owner? Click here to sign up" BackgroundColor="Transparent" FontSize="10" />
+        <Button x:Name="Customer" Text="Not a business manager? Click here to sign up" BackgroundColor="Transparent" FontSize="10" />
     </StackLayout>
 </ContentPage>
