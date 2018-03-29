@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.HomeCustomer"
+            xmlns:local="GrocerEase">
+            <local:HomePage>
+ <Label Text="WhyTHEFRickthisaintWORKINw" FontColor="White"/>
+            </local:HomePage>
+        <NavigationPage Title="Home" Icon="LISTICON">
+               
+        <x:Arguments>
+            <local:CreateList />
+            <local:SavedLists />
+            <local:Reminders />
+
+        </x:Arguments>
+        </NavigationPage>
+            
+</TabbedPage>
