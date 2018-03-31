@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Forms.Xaml;
 using Xamarin.Forms;
 namespace GrocerEase
 {
     public partial class CreateAccount : ContentPage
     {
-        class userInfo
+        /*class userInfo
         {
             public string email;
             public string password;
             public bool storeManager;
             public int userId;
-        }
+        }*/
         public CreateAccount()
         {
             InitializeComponent();
@@ -25,20 +25,9 @@ namespace GrocerEase
         }
         void CreateButton_Click(Object sender, EventArgs e)
         {
-            Dictionary<string, userInfo> users = new Dictionary<string, userInfo>();
-            Random rnd = new Random();
-
             if (PasswordBox.Text == PassConfirmBox.Text)
             {
-                //Send Confirmation email and show confirmation page
-                try
-                {
-                    users.Add(EmailBox.Text, new userInfo { email = EmailBox.Text, password = PasswordBox.Text, storeManager = false, userId = rnd.Next(9999) });
-                }
-                catch (ArgumentException)
-                {
-                    DisplayAlert("Error", "That email is already linked to an account.", "OK");
-                }
+                Navigation.PushModalAsync(new CustomerHome());
             }
         }
 

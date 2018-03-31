@@ -32,6 +32,7 @@ namespace GrocerEase
 			var LayoutTap = new TapGestureRecognizer();
 			LayoutTap.Tapped += (sender, e) => {
 				DefaultBackground();
+                Navigation.PushAsync(new GrocerEasePage());
 				stckLayout.BackgroundColor = Color.Teal;
 			};
 			stckLayout.GestureRecognizers.Add(LayoutTap);
@@ -44,6 +45,7 @@ namespace GrocerEase
 			var NotifsTap = new TapGestureRecognizer();
 			NotifsTap.Tapped += (sender, e) => {
 				DefaultBackground();
+                Navigation.PushAsync(new Notifications());
 				stckNotifs.BackgroundColor = Color.Teal;
 			};
 			stckNotifs.GestureRecognizers.Add(NotifsTap);

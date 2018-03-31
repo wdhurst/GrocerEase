@@ -24,6 +24,11 @@ namespace GrocerEase
         {
             // Check if email is unique
             // Send info into database
+            if (PasswordBox.Text == PassConfirmBox.Text)
+            {
+                //Navigation.PushModalAsync (new OwnerHome());
+            }
+
         }
 
         void LoginPage_Clicked(object sender, EventArgs e)

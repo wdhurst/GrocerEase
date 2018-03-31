@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.Reminders">
+    <Label Text="Reminders" HorizontalOptions="Center" FontSize="45" Margin="0,0,0,50" />
+    <HorizontalLayout>
+        <Label Text="Item Name"/>
+        <Entry x:Name="itemBox" />
+        <ComboBox IsEditable="True" x:Name="lengthInt">
+             <ComboBoxItem Content="1"/>
+             <ComboBoxItem Content="2"/>
+             <ComboBoxItem Content="3"/>
+             <ComboBoxItem Content="4"/>
+             <ComboBoxItem Content="5"/>
+             <ComboBoxItem Content="6"/>
+             <ComboBoxItem Content="7"/>
+        </ComboBox>
+        <ComboBox IsEditable="True" x:Name="lengthType">
+            <ComboBoxItem Content="Days"/>
+            <ComboBoxItem Content="Weeks"/>
+        </ComboBox>
+        <CheckBox x:Name="recurBox" Text="Recurring Reminder?"/>
+        <Button x:Name="addButton" Text="Add Reminder"/>
+    </HorizontalLayout>
+    <AbsoluteLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Margin="0,200,0,0" HorizontalOptions="Center">
+                <Label Text="Xamarin.Forms" HorizontalTextAlignment="Center" TextColor="White"></Label>
+                <Label Text="Bottom NavigationBar" HorizontalTextAlignment="Center" TextColor="White"></Label>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+            <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckSavedLists">
+                <Image Margin="0,10,0,10" x:Name="imgSavedLists" Style="{StaticResource ButtonNavigationBarImageStyle}" />
+                <Label Text="Saved Lists" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+            </StackLayout>
+            <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
+                <Image Margin="0,10,0,10" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />
+                <Label Text="Store Layout" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+            </StackLayout>
+            <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckNewList">
+                <Image Margin="0,10,0,10" x:Name="imgNewList" Style="{StaticResource ButtonNavigationBarImageStyle}" />
+                <Label Text="New List" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+            </StackLayout>
+            <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckNotifs">
+                <Image Margin="0,10,0,10" x:Name="imgNotifs" Style="{StaticResource ButtonNavigationBarImageStyle}" />
+                <Label Text="Notifications" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+            </StackLayout>
+            <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckHome">
+                <Image Margin="0,10,0,10" x:Name="imgHome" Style="{StaticResource ButtonNavigationBarImageStyle}" />
+                <Label Text="Home" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+            </StackLayout>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
