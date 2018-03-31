@@ -1,26 +1,13 @@
 ﻿using System;
-using System.Threading;
-using System.Windows;
 using System.Collections.Generic;
-using Xamarin;
-using Xamarin.Forms.Xaml;
+
 using Xamarin.Forms;
-
-
-public struct Reminder
-{
-    public int ID { get; set; }
-    public string date { get; set; }
-    public bool recurring { get; set; }
-    public string itemName { get; set; }
-};
-
 
 namespace GrocerEase
 {
-    public partial class Reminders : ContentPage
+    public partial class SavedLists : ContentPage
     {
-        public Reminders()
+        public SavedLists()
         {
             InitializeComponent();
             imgSavedLists.Source = ImageSource.FromResource("XamarinForms_BottomNBar.home.png");
@@ -73,36 +60,6 @@ namespace GrocerEase
             stckNewList.BackgroundColor = Color.White;
             stckNotifs.BackgroundColor = Color.White;
             stckHome.BackgroundColor = Color.White;
-        }
-
-        void AddButton_Clicked(object sender, EventArgs e)
-        {
-            DateTime current = DateTime.Today;
-            DateTime timetoBuy = DateTime.Today;
-            if (LengthType.SelectedIndex == 0)
-            {
-                double numDays = LengthPick.SelectedIndex + 1;
-                timetoBuy.AddDays(numDays);
-            }
-            else
-            {
-                double numWeeks = LengthPick.SelectedIndex + 1;
-                timetoBuy.AddDays(numWeeks * 7);
-            }
-
-              DisplayAlert("Reminder ", "You need to buy" + itemBox.Text + " ", "OK");
-              item.Text = "we made it!";
-#if __ANDROID__
-           
-#endif
-
-        }
-        public bool checkTime(DateTime current, DateTime timetoBuy)
-        {
-            if (current > timetoBuy)
-                return true;
-            else
-                return false;
         }
     }
 }

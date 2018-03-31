@@ -1,6 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.CustomerHome">
     <AbsoluteLayout>
+        <Label Text="GrocerEase" FontSize="45" TextColor="Black"/>
         <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
             <StackLayout Margin="0,200,0,0" HorizontalOptions="Center">
                 <Label Text="Xamarin.Forms" HorizontalTextAlignment="Center" TextColor="White"></Label>

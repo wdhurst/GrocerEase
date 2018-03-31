@@ -12,7 +12,8 @@ namespace GrocerEase
         void LogIn_Clicked(object sender, System.EventArgs e)
         {
             //Check password against matching password in database.
-            //Navigaton.PushModalAsyny(new Home());
+            Navigation.PushModalAsync(new CustomerHome());
+
         }
 
         void OwnerSignUp_Clicked(object sender, System.EventArgs e)
