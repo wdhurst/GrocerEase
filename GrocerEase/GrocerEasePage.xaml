@@ -8,7 +8,8 @@
         <Label Text="Email"></Label>
         <Entry Placeholder="Enter Your Email" x:Name="EmailEntry"></Entry>
         <Label Text="Password"></Label>
-        <Entry Placeholder="Enter Your Password" x:Name="PasswordEntry"></Entry>
+        <Entry Placeholder="Enter Your Password" x:Name="PasswordEntry" IsPassword="true">
+        </Entry>
         <Button Text="Login" x:Name="LogIn"></Button>
         <Button Text="Don't have an account? Click here to&#10;sign up" x:Name="CustmerSignUp" FontSize="10" BackgroundColor="Transparent"></Button>
         <Button Text="Are you a business manager? Click here to&#10;sign up" x:Name="OwnerSignUp" FontSize="10" BackgroundColor="Transparent"></Button>

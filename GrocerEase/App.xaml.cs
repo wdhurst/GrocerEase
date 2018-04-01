@@ -1,15 +1,34 @@
-﻿using Xamarin.Forms;
+﻿using SQLite;
+using System;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+using System.Diagnostics;
 
 namespace GrocerEase
 {
     public partial class App : Application
     {
+        static LogInDataBase database;
+
         public App()
         {
             InitializeComponent();
 
             MainPage = new GrocerEasePage();
 		}
+
+        public static LogInDataBase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new LogInDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("LogInSQLite.db3"));
+                }
+                return database;
+            }
+        }
+
 
         protected override void OnStart()
         {

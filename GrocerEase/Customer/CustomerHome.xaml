@@ -11,7 +11,7 @@
         <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckSavedLists">
                 <Image Margin="0,10,0,10" x:Name="imgSavedLists" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Saved Lists" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+                <Label Text="Saved Lists"  VerticalOptions="Start" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
                 <Image Margin="0,10,0,10" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />

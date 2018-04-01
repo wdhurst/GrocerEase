@@ -7,13 +7,13 @@
         <Label Text="Email" />
         <Entry x:Name="EmailBox" Placeholder="Enter Your Email"/>
         <Label Text="Password" />
-        <Entry x:Name="PasswordBox" Placeholder="Enter Your Password"/>
+        <Entry x:Name="PasswordBox" Placeholder="Enter Your Password" IsPassword="true"/>
         <Label Text="Confirm Password" />
-        <Entry x:Name="PassConfirmBox" Placeholder="Re-Enter Your Password"/>
+        <Entry x:Name="PassConfirmBox" Placeholder="Re-Enter Your Password" IsPassword="True"/>
         <Label Text="Business Name"/>
         <Entry x:Name="BusinessName" Placeholder="Enter the Business Name"/>
         <Label Text="Business Number"/>
-        <Entry x:Name="BusinessNum" Placeholder="Enter Your Business Number"/>
+        <Entry x:Name="BusinessNum" Placeholder="Enter Your Phone Number"/>
         <Button x:Name="CreateButton" Text="Create Account"/>
         <Button x:Name="LoginPage" Text="Already have an account? Click here to log in." BackgroundColor="Transparent" FontSize="10"/>
         <Button x:Name="Customer" Text="Not a business manager? Click here to sign up" BackgroundColor="Transparent" FontSize="10" />

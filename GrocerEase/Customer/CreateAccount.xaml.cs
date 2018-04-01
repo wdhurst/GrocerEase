@@ -29,6 +29,8 @@ namespace GrocerEase
             {
                 Navigation.PushModalAsync(new CustomerHome());
             }
+            else
+                DisplayAlert("Alert", "Your Passwords do not match.", "OK");
         }
 
         void LoginPage_Clicked(object sender, EventArgs e)
