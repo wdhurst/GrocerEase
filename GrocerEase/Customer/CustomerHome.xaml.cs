@@ -15,11 +15,11 @@ namespace GrocerEase
 		public CustomerHome ()
 		{
 			InitializeComponent ();
-            imgSavedLists.Source = ImageSource.FromResource("XamarinForms_BottomNBar.home.png");
-            imgLogo.Source = ImageSource.FromResource("XamarinForms_BottomNBar.alarm.png");
-            imgNewList.Source = ImageSource.FromResource("XamarinForms_BottomNBar.camera.png");
-            imgNotifs.Source = ImageSource.FromResource("XamarinForms_BottomNBar.settings.png");
-            imgHome.Source = ImageSource.FromResource("XamarinForms_BottomNBar.logout.png");
+             imgSavedLists.Source = ImageSource.FromResource("GrocerEase.icons.lists.png");
+            imgLogo.Source = ImageSource.FromResource("GrocerEase.icons.store.png");
+            imgNewList.Source = ImageSource.FromResource("GrocerEase.icons.new-list.png");
+            imgNotifs.Source = ImageSource.FromResource("GrocerEase.icons.notifications.png");
+            imgHome.Source = ImageSource.FromResource("GrocerEase.icons.home.png");
 
             //Tap Gesture Recognizer  
             var SavedListsTap = new TapGestureRecognizer();
