@@ -15,11 +15,11 @@ namespace GrocerEase
 		public CustomerHome ()
 		{
 			InitializeComponent ();
-             imgSavedLists.Source = ImageSource.FromResource("GrocerEase.icons.lists.png");
-            imgLogo.Source = ImageSource.FromResource("GrocerEase.icons.store.png");
-            imgNewList.Source = ImageSource.FromResource("GrocerEase.icons.new-list.png");
-            imgNotifs.Source = ImageSource.FromResource("GrocerEase.icons.notifications.png");
-            imgHome.Source = ImageSource.FromResource("GrocerEase.icons.home.png");
+             imgSavedLists.Source = ImageSource.FromResource("GrocerEase.lists.png");
+            imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
+            imgNewList.Source = ImageSource.FromResource("GrocerEase.new-list.png");
+            imgNotifs.Source = ImageSource.FromResource("GrocerEase.notifications.png");
+            imgHome.Source = ImageSource.FromResource("GrocerEase.home.png");
 
             //Tap Gesture Recognizer  
             var SavedListsTap = new TapGestureRecognizer();

@@ -57,6 +57,13 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="edit.png" />
+    <EmbeddedResource Include="home.png" />
+    <EmbeddedResource Include="inventory.png" />
+    <EmbeddedResource Include="lists.png" />
+    <EmbeddedResource Include="new-list.png" />
+    <EmbeddedResource Include="notifications.png" />
+    <EmbeddedResource Include="store.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
