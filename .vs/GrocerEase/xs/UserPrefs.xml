@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{78BFCFBF-5F8E-4D02-8E9D-5F9FF1074AC7}|Default">
+  <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.Nexus_5X_API_27_x86" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="GrocerEase/Customer/NewList.xaml" Line="40" Column="15" />
+      <File FileName="GrocerEase/Customer/SavedLists.xaml" Line="40" Column="15" />
+      <File FileName="GrocerEase/Customer/Reminders.xaml" Line="56" Column="1" />
+      <File FileName="GrocerEase/Customer/StoreLayout.xaml" Line="33" Column="15" />
+      <File FileName="GrocerEase/Customer/CustomerHome.xaml" Line="33" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4EE9ED2E-B385-4FB6-B212-D843DE19D161" />
+</Properties>
