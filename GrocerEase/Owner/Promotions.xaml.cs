@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace GrocerEase.Owner
 {
-    public partial class Inventory : ContentPage
+    public partial class Promotions : ContentPage
     {
-        public Inventory()
+        public Promotions()
         {
             InitializeComponent();
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");

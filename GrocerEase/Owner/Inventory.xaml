@@ -16,9 +16,9 @@
                 <Image Margin="0,0,0,0" x:Name="imgInventory" Style="{StaticResource ButtonNavigationBarImageStyle}" />
                 <Label Text="Inventory" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
-            <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckNotifs">
-                <Image Margin="0,0,0,0" x:Name="imgNotifs" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Notifications" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+            <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckPromos">
+                <Image Margin="0,0,0,0" x:Name="imgPromos" Style="{StaticResource ButtonNavigationBarImageStyle}" />
+                <Label Text="Promotions" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
         </StackLayout>
     </AbsoluteLayout>

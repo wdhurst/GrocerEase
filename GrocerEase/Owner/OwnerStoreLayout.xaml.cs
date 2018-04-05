@@ -12,7 +12,7 @@ namespace GrocerEase.Owner
             InitializeComponent();
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
             imgInventory.Source = ImageSource.FromResource("GrocerEase.inventory.png");
-            imgNotifs.Source = ImageSource.FromResource("GrocerEase.notifications.png");
+            imgPromos.Source = ImageSource.FromResource("GrocerEase.notifications.png");
 
             //Tap Gesture Recognizer  
             var LayoutTap = new TapGestureRecognizer();
@@ -32,16 +32,16 @@ namespace GrocerEase.Owner
             var NotifsTap = new TapGestureRecognizer();
             NotifsTap.Tapped += (sender, e) => {
                 DefaultBackground();
-                App.Current.MainPage = new NavigationPage(new Reminders());
-                stckNotifs.BackgroundColor = Color.Teal;
+                App.Current.MainPage = new NavigationPage(new Promotions());
+                stckPromos.BackgroundColor = Color.Teal;
             };
-            stckNotifs.GestureRecognizers.Add(NotifsTap);
+            stckPromos.GestureRecognizers.Add(NotifsTap);
         }
         public void DefaultBackground()
         {
             stckLayout.BackgroundColor = Color.White;
             stckInventory.BackgroundColor = Color.White;
-            stckNotifs.BackgroundColor = Color.White;
+            stckPromos.BackgroundColor = Color.White;
         }
     }
 }

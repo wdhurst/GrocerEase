@@ -72,6 +72,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Owner\Promotions.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -110,6 +114,9 @@
     </Compile>
     <Compile Include="Owner\OwnerStoreLayout.xaml.cs">
       <DependentUpon>OwnerStoreLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Owner\Promotions.xaml.cs">
+      <DependentUpon>Promotions.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
