@@ -12,7 +12,7 @@ Makefile.in
 *.DS_Store
 *.sln.cache
 *.suo
-*.xml
+UserPrefs.xml
 *.cache
 *.pidb
 *.userprefs
