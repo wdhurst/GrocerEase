@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.Owner.Inventory">
+    <AbsoluteLayout Margin="0, 0, 0, 0">
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 600, 1">
+            <BoxView HeightRequest="70" BackgroundColor="#2ab748" HorizontalOptions="FillAndExpand" />
+            <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+        <Label Margin="25" Text="GrocerEase" FontSize="35" TextColor="Black"/>
+
+        <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+            <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
+                <Image Margin="0,0,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />
+                <Label Text="Store Layout" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+            </StackLayout>
+            <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckInventory">
+                <Image Margin="0,0,0,0" x:Name="imgInventory" Style="{StaticResource ButtonNavigationBarImageStyle}" />
+                <Label Text="Inventory" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+            </StackLayout>
+            <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckNotifs">
+                <Image Margin="0,0,0,0" x:Name="imgNotifs" Style="{StaticResource ButtonNavigationBarImageStyle}" />
+                <Label Text="Notifications" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+            </StackLayout>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

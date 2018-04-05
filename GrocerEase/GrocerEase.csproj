@@ -64,6 +64,14 @@
     <EmbeddedResource Include="new-list.png" />
     <EmbeddedResource Include="notifications.png" />
     <EmbeddedResource Include="store.png" />
+    <EmbeddedResource Include="Owner\Inventory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner\OwnerStoreLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -96,6 +104,12 @@
     </Compile>
     <Compile Include="Owner\CreateAccountOwner.xaml.cs">
       <DependentUpon>CreateAccountOwner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Owner\Inventory.xaml.cs">
+      <DependentUpon>Inventory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Owner\OwnerStoreLayout.xaml.cs">
+      <DependentUpon>OwnerStoreLayout.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
