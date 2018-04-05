@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
     
-<!--***Login Page***-->
+<!--***Welcome Page***-->
     
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GrocerEase" x:Class="GrocerEase.GrocerEasePage">
     <StackLayout Margin="20,50,20,50">
-        <Label Text="GrocerEase" HorizontalOptions="Center" FontSize="45" Margin="0,0,0,50"></Label>
-        <Label Text="Email"></Label>
-        <Entry Placeholder="Enter Your Email" x:Name="EmailEntry"></Entry>
-        <Label Text="Password"></Label>
-        <Entry Placeholder="Enter Your Password" x:Name="PasswordEntry" IsPassword="true">
-        </Entry>
-        <Button Text="Login" x:Name="LogIn"></Button>
-        <Button Text="Don't have an account? Click here to&#10;sign up" x:Name="CustmerSignUp" FontSize="10" BackgroundColor="Transparent"></Button>
-        <Button Text="Are you a business manager? Click here to&#10;sign up" x:Name="OwnerSignUp" FontSize="10" BackgroundColor="Transparent"></Button>
+        <Label Text="GrocerEase" HorizontalOptions="Center" FontSize="45" Margin="0,0,0,75"></Label>
+        <Label Text="Already have an account?" HorizontalTextAlignment="Center" Margin="0,0,0,25" FontSize="20"></Label>
+        <Button Text="Tap Here To Login" x:Name="LogIn" FontSize="16"></Button>
+        <Label Text="Don't have an account? Select one of the options below to sign up now!" HorizontalTextAlignment="Center" Margin="0,50,0,25" FontSize="20"></Label>
+        <Button Text="Customer" x:Name="CustmerSignUp" FontSize="16" BackgroundColor="Transparent"></Button>
+        <Button Text="Business Manager" x:Name="OwnerSignUp" FontSize="16" BackgroundColor="Transparent"></Button>
     </StackLayout>
 </ContentPage>
