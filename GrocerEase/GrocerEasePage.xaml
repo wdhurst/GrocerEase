@@ -2,7 +2,7 @@
     
 <!--***Welcome Page***-->
     
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GrocerEase" x:Class="GrocerEase.GrocerEasePage">
+<ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GrocerEase" x:Class="GrocerEase.GrocerEasePage">
     <StackLayout Margin="20,50,20,50">
         <Label Text="GrocerEase" HorizontalOptions="Center" FontSize="45" Margin="0,0,0,75"></Label>
         <Label Text="Already have an account?" HorizontalTextAlignment="Center" Margin="0,0,0,25" FontSize="20"></Label>

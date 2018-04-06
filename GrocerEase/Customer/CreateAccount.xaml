@@ -2,7 +2,7 @@
 
 <!--***Normal User Account***-->
     
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.CreateAccount">
+<ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.CreateAccount">
     <StackLayout Margin="20,50,20,50">
         <Label Text="Email" />
         <Entry x:Name="EmailBox" Placeholder="Enter Your Email"/> 
