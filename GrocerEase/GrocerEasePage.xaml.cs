@@ -13,7 +13,6 @@ namespace GrocerEase
         {
             //Check password against matching password in database.
             Navigation.PushModalAsync(new LoginPage());
-
         }
 
         void OwnerSignUp_Clicked(object sender, System.EventArgs e)

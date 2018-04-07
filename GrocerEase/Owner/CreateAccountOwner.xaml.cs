@@ -26,7 +26,8 @@ namespace GrocerEase
             // Send info into database
             if (PasswordBox.Text == PassConfirmBox.Text)
             {
-                //Navigation.PushModalAsync (new OwnerHome());
+                Navigation.PushModalAsync(new Owner.Inventory());
+
             }
 
         }

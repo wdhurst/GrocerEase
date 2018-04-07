@@ -8,7 +8,7 @@ namespace GrocerEase
 {
     public partial class App : Application
     {
-        static LogInDataBase database;
+        static ShoppingListDataBase database;
 
         public App()
         {
@@ -17,13 +17,13 @@ namespace GrocerEase
             MainPage = new GrocerEasePage();
 		}
 
-        public static LogInDataBase Database
+        public static ShoppingListDataBase Database
         {
             get
             {
                 if (database == null)
                 {
-                    database = new LogInDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("LogInSQLite.db3"));
+                    database = new  ShoppingListDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("ShoppingListSQLite.db3"));
                 }
                 return database;
             }

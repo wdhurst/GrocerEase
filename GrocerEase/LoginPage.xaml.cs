@@ -15,8 +15,16 @@ namespace GrocerEase
         void LogIn_Clicked(object sender, System.EventArgs e)
         {
             //Check password against matching password in database.
-            Navigation.PushModalAsync(new CustomerHome());
-
+            if (EmailEntry.Text == "customer@example.net" && PasswordEntry.Text == "password")
+            {
+                Navigation.PushModalAsync(new CustomerHome());
+            }
+            else if (EmailEntry.Text == "manager@example.net" && PasswordEntry.Text == "password")
+            {
+                Navigation.PushModalAsync(new Owner.OwnerStoreLayout());
+            }
+            else
+                DisplayAlert("Error", "No account exists with those credentials. Please try again or click below to create an account.", "OK");
         }
 
         void OwnerSignUp_Clicked(object sender, System.EventArgs e)

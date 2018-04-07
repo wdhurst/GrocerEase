@@ -14,7 +14,7 @@ namespace GrocerEase
 	{
 		public CustomerHome ()
 		{
-			InitializeComponent ();
+			InitializeComponent ()
              imgSavedLists.Source = ImageSource.FromResource("GrocerEase.lists.png");
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
             imgNewList.Source = ImageSource.FromResource("GrocerEase.new-list.png");
