@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.Owner.Promotions">
+<ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.Owner.Promotions">
     <AbsoluteLayout Margin="0, 0, 0, 0">
         <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 600, 1">
             <BoxView HeightRequest="70" BackgroundColor="#2ab748" HorizontalOptions="FillAndExpand" />

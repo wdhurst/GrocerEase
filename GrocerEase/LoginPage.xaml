@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.LoginPage">
+<ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.LoginPage">
     <StackLayout Margin="20,50,20,50">
         <Label Text="GrocerEase" HorizontalOptions="Center" FontSize="45" Margin="0,0,0,50"></Label>
         <Label Text="Email"></Label>
