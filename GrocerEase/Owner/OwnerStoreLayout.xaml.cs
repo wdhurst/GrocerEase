@@ -10,6 +10,8 @@ namespace GrocerEase.Owner
         public OwnerStoreLayout()
         {
             InitializeComponent();
+            imgStoreLayout.Source = ImageSource.FromResource("GrocerEase.layout.jpg");
+
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
             imgInventory.Source = ImageSource.FromResource("GrocerEase.inventory.png");
             imgPromos.Source = ImageSource.FromResource("GrocerEase.notifications.png");
