@@ -49,10 +49,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Customer\SavedLists.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="Owner\CreateAccountOwner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
@@ -79,6 +75,10 @@
     <EmbeddedResource Include="LoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\itemPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -107,9 +107,6 @@
     <Compile Include="Customer\Reminders.xaml.cs">
       <DependentUpon>Reminders.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Customer\SavedLists.xaml.cs">
-      <DependentUpon>SavedLists.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Owner\CreateAccountOwner.xaml.cs">
       <DependentUpon>CreateAccountOwner.xaml</DependentUpon>
     </Compile>
@@ -124,6 +121,9 @@
     </Compile>
     <Compile Include="LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\itemPage.xaml.cs">
+      <DependentUpon>itemPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -29,11 +29,6 @@
         <!--<Switch x:Name="recurSwitch" Text="Recurring Reminder?"/> -->
             <Button x:Name="addButton" Text="Add Reminder" BackgroundColor="#ccffd7" TextColor="Black" BorderWidth="2"/>
         </StackLayout>
-        <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
-            <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckSavedLists">
-                <Image Margin="0,0,0,0" x:Name="imgSavedLists" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Saved Lists" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
-            </StackLayout>
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
                 <Image Margin="0,0,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />
                <Label Text="Store Layout" Style="{StaticResource ButtonNavigationBarLabelStyle}" VerticalTextAlignment="Start"></Label>
@@ -50,6 +45,5 @@
                 <Image Margin="0,0,0,0" x:Name="imgHome" Style="{StaticResource ButtonNavigationBarImageStyle}" />
                 <Label Text="Home" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
-        </StackLayout>
-    </AbsoluteLayout>
+        </AbsoluteLayout>
 </ContentPage>

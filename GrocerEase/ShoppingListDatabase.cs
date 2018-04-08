@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Threading;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 using SQLite;
 using Xamarin.Forms;
@@ -16,31 +16,22 @@ namespace GrocerEase
             database.CreateTableAsync<ShoppingList>().Wait();
         }
 
-       /* public Task<int>SaveItemAsync(ShoppingList account)
-        {
-            if (account.ID != 0)
-                return database.QueryAsync<ShoppingList>();
-            else
-                return database.InsertAsync(account);
-        }
-
-
-      public Account<List<ShoppingList>> GetItemsAsync()
+      public Task<List<ShoppingList>> GetItemsAsync()
         {
             return database.Table<ShoppingList>().ToListAsync();
         }
 
-        public Account<List<ShoppingList>> GetItemsNotDoneAsync()
+        public Task<List<ShoppingList>> GetItemsNotDoneAsync()
         {
-            //return database.QueryAsync<ShoppingList>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
+            return database.QueryAsync<ShoppingList>("SELECT * FROM [itemName] WHERE [inCart] = 0");
         }
 
-        public Account<ShoppingList> GetItemAsync(int id)
+        public Task<ShoppingList> GetItemAsync(int id)
         {
             return database.Table<ShoppingList>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
 
-        public Account<int> SaveItemAsync(ShoppingList item)
+        public Task<int> SaveItemAsync(ShoppingList item)
         {
             if (item.ID != 0)
             {
@@ -52,11 +43,10 @@ namespace GrocerEase
             }
         }
 
-        public Account<int> DeleteItemAsync(ShoppingList item)
+        public Task<int> DeleteItemAsync(ShoppingList item)
         {
             return database.DeleteAsync(item);
         }
-*/
     }
 }
 

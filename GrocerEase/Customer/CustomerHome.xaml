@@ -6,12 +6,7 @@
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
         <Label Margin="25" Text="GrocerEase" FontSize="35" TextColor="Black"/>
-
         <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
-            <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckSavedLists">
-                <Image Margin="0,0,0,0" x:Name="imgSavedLists" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Saved Lists" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
-            </StackLayout>
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
                 <Image Margin="0,0,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />
                 <Label Text="Store Layout" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
@@ -29,5 +24,5 @@
                 <Label Text="Home" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
         </StackLayout>
-    </AbsoluteLayout>
-</ContentPage>
+        </AbsoluteLayout>
+    </ContentPage>

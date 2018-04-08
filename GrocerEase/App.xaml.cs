@@ -29,6 +29,8 @@ namespace GrocerEase
             }
         }
 
+        public int ResumeAtShoppingListId { get; set; }
+
 
         protected override void OnStart()
         {

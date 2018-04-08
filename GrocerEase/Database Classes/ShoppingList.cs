@@ -6,7 +6,7 @@ namespace GrocerEase
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         public string ItemName { get; set; }
-        public bool Incart { get; set; }
+        public bool InCart { get; set; }
 
     }
 }
