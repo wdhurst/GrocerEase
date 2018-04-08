@@ -126,6 +126,8 @@
     <Compile Include="Customer\itemPage.xaml.cs">
       <DependentUpon>itemPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Database Classes\InventoryList.cs" />
+    <Compile Include="InventoryListDataBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SQLite-net">
