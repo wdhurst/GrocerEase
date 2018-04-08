@@ -80,6 +80,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="layout.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">

@@ -7,6 +7,10 @@
         </StackLayout>
         <Label Margin="25" Text="Store Layout" FontSize="35" TextColor="Black"/>
 
+        <StackLayout>
+            <Image x:Name="imgStoreLayout" HorizontalOptions="Center" />
+        </StackLayout>
+
         <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
                 <Image Margin="0,0,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />
