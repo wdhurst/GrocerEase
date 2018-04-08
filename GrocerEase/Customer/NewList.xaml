@@ -12,9 +12,18 @@
         <Label Margin="25" Text="Grocery List" FontSize="30" TextColor="Black" Grid.Column="0"/>
         <Button x:Name="addItem" Margin="20" WidthRequest="110" Text="Add Item" BackgroundColor="#ccffd7" TextColor="Black" BorderWidth="2" Grid.Column="1"/>
          </Grid>
-        <StackLayout AbsoluteLayout.LayoutBounds="10, 530, 110, 1">
-            <Button  Text="Save" BackgroundColor="#ccffd7" TextColor="Black" BorderWidth="2"/>
-        </StackLayout>
+        <ListView x:Name="listView" Margin="100" ItemSelected="OnListItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                        <Image Source="check.png" HorizontalOptions="End" IsVisible="{Binding InCart}" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
         <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
                 <Image Margin="0,0,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />

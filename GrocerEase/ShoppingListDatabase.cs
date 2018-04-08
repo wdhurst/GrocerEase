@@ -8,7 +8,7 @@ namespace GrocerEase
 {
     public class ShoppingListDataBase 
     {
-        SQLiteAsyncConnection database;
+        readonly SQLiteAsyncConnection database;
 
         public ShoppingListDataBase(string dbPath)
         {

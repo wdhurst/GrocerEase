@@ -8,8 +8,6 @@ namespace GrocerEase
 {
     public partial class NewList : ContentPage
     {
-
-
         public NewList()
         {
             InitializeComponent();
@@ -54,6 +52,15 @@ namespace GrocerEase
 
 
         }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            // Reset the 'resume' id, since we just want to re-start here
+            ((App)App.Current).ResumeAtShoppingListId = -1;
+            listView.ItemsSource = await App.Database.GetItemsAsync();
+        }
+
         public void DefaultBackground()
         {
             stckLayout.BackgroundColor = Color.White;
@@ -62,23 +69,13 @@ namespace GrocerEase
             stckHome.BackgroundColor = Color.White;
 
         }
-        protected override async void OnAppearing()
-        {
-            base.OnAppearing();
-
-            var listView = new ListView();
-
-            // Reset the 'resume' id, since we just want to re-start here
-            ((App)App.Current).ResumeAtShoppingListId = -1;
-            listView.ItemsSource = await App.Database.GetItemsAsync();
-        }
 
         async void AddItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new itemPage());
+            await Navigation.PushAsync(new itemPage()
             {
-                BindingContext = new ShoppingList();
-            };
+                BindingContext = new ShoppingList()
+            });
         }
 
         async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -87,10 +84,10 @@ namespace GrocerEase
             //Debug.WriteLine("setting ResumeAtTodoId = " + (e.SelectedItem as TodoItem).ID);
             if (e.SelectedItem != null)
             {
-                await Navigation.PushAsync(new itemPage());
+                await Navigation.PushAsync(new itemPage()
                 {
-                    BindingContext = e.SelectedItem as ShoppingList;
-                }
+                    BindingContext = e.SelectedItem as ShoppingList
+                });
             }
         }
     }
