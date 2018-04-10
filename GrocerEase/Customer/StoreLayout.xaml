@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.StoreLayout">
     <AbsoluteLayout Margin="0, 0, 0, 0">
-        <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 600, 1">
-            <BoxView HeightRequest="70" BackgroundColor="#40dca0" HorizontalOptions="FillAndExpand" />
-            <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
-        </StackLayout>
-        <Label Margin="25" Text="Store Layout" FontSize="35" TextColor="Black"/>
-
         <StackLayout>
             <StackLayout>
                 <Image x:Name="imgStoreLayout" HorizontalOptions="Center" />
