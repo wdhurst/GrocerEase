@@ -9,6 +9,7 @@ namespace GrocerEase
     public partial class App : Application
     {
         static ShoppingListDataBase database;
+        static InventoryListDataBase database2;
 
         public App()
         {
@@ -26,6 +27,18 @@ namespace GrocerEase
                     database = new  ShoppingListDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("ShoppingListSQLite.db3"));
                 }
                 return database;
+            }
+        }
+
+        public static InventoryListDataBase DataBase2
+        {
+            get 
+            {
+                if (database2 == null)
+                {
+                    database2 = new InventoryListDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("InventoryListSQLite.db3"));
+                }
+                return database2;
             }
         }
 

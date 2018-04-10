@@ -27,7 +27,7 @@ namespace GrocerEase
         {
             if (PasswordBox.Text == PassConfirmBox.Text)
             {
-                App.Current.MainPage = new NavigationPage(new CustomerHome());
+                App.Current.MainPage = new NavigationPage(new NewList());
             }
             else
                 DisplayAlert("Alert", "Your Passwords do not match.", "OK");

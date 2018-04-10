@@ -82,6 +82,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="layout.jpg" />
     <EmbeddedResource Include="directory.jpg" />
+    <EmbeddedResource Include="check.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">

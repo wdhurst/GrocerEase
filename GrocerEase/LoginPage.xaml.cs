@@ -17,7 +17,7 @@ namespace GrocerEase
             //Check password against matching password in database.
             if (EmailEntry.Text == "customer@example.net" && PasswordEntry.Text == "password")
             {
-                Navigation.PushModalAsync(new CustomerHome());
+                Navigation.PushModalAsync(new NewList());
             }
             else if (EmailEntry.Text == "manager@example.net" && PasswordEntry.Text == "password")
             {

@@ -23,7 +23,7 @@ namespace GrocerEase
 
         public Task<List<ShoppingList>> GetItemsNotDoneAsync()
         {
-            return database.QueryAsync<ShoppingList>("SELECT * FROM [itemName] WHERE [inCart] = 0");
+            return database.QueryAsync<ShoppingList>("SELECT * FROM [ItemName] WHERE [InCart] = 0");
         }
 
         public Task<ShoppingList> GetItemAsync(int id)
@@ -46,6 +46,11 @@ namespace GrocerEase
         public Task<int> DeleteItemAsync(ShoppingList item)
         {
             return database.DeleteAsync(item);
+        }
+
+        public Task<List<ShoppingList>> DeleteAllAsync()
+        {
+            return database.QueryAsync<ShoppingList>("DELETE * FROM ShoppingList WHERE [InCart] = 1");
         }
     }
 }
