@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{78BFCFBF-5F8E-4D02-8E9D-5F9FF1074AC7}|Default">
   <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Owner/OwnerStoreLayout.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/CreateAccount.xaml">
     <Files>
-      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml" Line="16" Column="27" />
-      <File FileName="GrocerEase/Customer/StoreLayout.xaml" Line="11" Column="13" />
-      <File FileName="GrocerEase/Customer/StoreLayout.xaml.cs" Line="13" Column="87" />
-      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml.cs" Line="14" Column="88" />
+      <File FileName="GrocerEase/Customer/CreateAccount.xaml" Line="17" Column="15" />
+      <File FileName="GrocerEase/Customer/CustomerHome.xaml" Line="28" Column="19" />
+      <File FileName="GrocerEase/Customer/itemPage.xaml" Line="12" Column="15" />
+      <File FileName="GrocerEase/Customer/NewList.xaml" Line="46" Column="15" />
+      <File FileName="GrocerEase/Customer/Reminders.xaml" Line="52" Column="1" />
+      <File FileName="GrocerEase/Customer/StoreLayout.xaml" Line="38" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -14,5 +16,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FA196D94-97B9-43AB-A5C8-D0142FB8EDEE" />
+  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4EE9ED2E-B385-4FB6-B212-D843DE19D161" />
 </Properties>

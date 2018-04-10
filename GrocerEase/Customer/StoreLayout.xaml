@@ -2,7 +2,7 @@
 <ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.StoreLayout">
     <AbsoluteLayout Margin="0, 0, 0, 0">
         <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 600, 1">
-            <BoxView HeightRequest="70" BackgroundColor="#2ab748" HorizontalOptions="FillAndExpand" />
+            <BoxView HeightRequest="70" BackgroundColor="#40dca0" HorizontalOptions="FillAndExpand" />
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
         <Label Margin="25" Text="Store Layout" FontSize="35" TextColor="Black"/>
@@ -16,22 +16,22 @@
             </StackLayout>
         </StackLayout>
 
-        <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+        <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#535353" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
                 <Image Margin="0,0,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Store Layout" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+                <Label Text="Store Layout" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckNewList">
                 <Image Margin="0,0,0,0" x:Name="imgNewList" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="New List" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+                <Label Text="New List" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckNotifs">
                 <Image Margin="0,0,0,0" x:Name="imgNotifs" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Notifications" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+                <Label Text="Notifications" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckHome">
                 <Image Margin="0,0,0,0" x:Name="imgHome" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Home" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+                <Label Text="Home" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
         </StackLayout>
     </AbsoluteLayout>

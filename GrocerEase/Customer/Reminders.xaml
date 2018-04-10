@@ -2,14 +2,14 @@
 <ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.Reminders">
     <AbsoluteLayout>
         <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 600, 1">
-            <BoxView HeightRequest="70" BackgroundColor="#2ab748" HorizontalOptions="FillAndExpand" />
+            <BoxView HeightRequest="70" BackgroundColor="#40dca0" HorizontalOptions="FillAndExpand" />
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
         <Label Margin="25" Text="Reminders" FontSize="35" TextColor="Black"/>
         <StackLayout Margin="10, 90, 0, 0">
             <Label Text="Item Name" x:Name="item"/>
             <Entry x:Name="itemBox" />
-            <Picker x:Name="LengthPick" Title="How Many?">
+            <Picker x:Name="LengthPick" Title="Remind me in...">
                 <Picker.Items>
                     <x:String>1</x:String>
                     <x:String>2</x:String>
@@ -27,23 +27,25 @@
                 </Picker.Items>
             </Picker>
         <!--<Switch x:Name="recurSwitch" Text="Recurring Reminder?"/> -->
-            <Button x:Name="addButton" Text="Add Reminder" BackgroundColor="#ccffd7" TextColor="Black" BorderWidth="2"/>
+            <Button x:Name="addButton" Text="Add Reminder" BackgroundColor="#c1ebd9" TextColor="Black" BorderWidth="2"/>
         </StackLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#535353" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
                 <Image Margin="0,0,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-               <Label Text="Store Layout" Style="{StaticResource ButtonNavigationBarLabelStyle}" VerticalTextAlignment="Start"></Label>
+                <Label Text="Store Layout" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckNewList">
                 <Image Margin="0,0,0,0" x:Name="imgNewList" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="New List" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+                <Label Text="New List" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckNotifs">
                 <Image Margin="0,0,0,0" x:Name="imgNotifs" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Notifications" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+                <Label Text="Notifications" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckHome">
                 <Image Margin="0,0,0,0" x:Name="imgHome" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Home" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+                <Label Text="Home" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
-        </AbsoluteLayout>
+        </StackLayout>
+    </AbsoluteLayout>
 </ContentPage>
