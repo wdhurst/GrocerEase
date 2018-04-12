@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.StoreLayout">
-    <ScrollView>
     <AbsoluteLayout Margin="0, 0, 0, 0">
+        <ScrollView>
         <StackLayout>
             <StackLayout>
                 <Image x:Name="imgStoreLayout" HorizontalOptions="Center" />
@@ -10,6 +10,7 @@
                 <Image x:Name="imgDirectory" HorizontalOptions="Center" />
             </StackLayout>
         </StackLayout>
+        </ScrollView>
 
         <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#535353" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
@@ -30,5 +31,4 @@
             </StackLayout>
         </StackLayout>
     </AbsoluteLayout>
-    </ScrollView>
 </ContentPage>
