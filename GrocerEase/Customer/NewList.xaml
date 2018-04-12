@@ -6,19 +6,20 @@
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
         <Label Margin="25" Text="Grocery List" FontSize="35" TextColor="Black" Grid.Column="0"/>
-        <Button x:Name="addItem" Margin="305, 0, 0, 0" WidthRequest="70" HeightRequest="70" Text="Add Item" BackgroundColor="#c1ebd9" TextColor="Black" BorderWidth="2" BorderRadius="0"/>
+        <Button x:Name="addItem" Margin="305, 0, 0, 0" WidthRequest="70" HeightRequest="70" Text="Add Item" BackgroundColor="#ccffd7" TextColor="Black" BorderWidth="2" BorderRadius="0"/>
         <ListView x:Name="listView" Margin="0, 80, 0, 0" ItemSelected="OnListItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <StackLayout Margin="0,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                         <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
-                        <Image Source="GrocerEase.check.png" HorizontalOptions="Center" IsVisible="{Binding InCart}" />
+                        <Image x:Name="checkImg" HorizontalOptions="Center" IsVisible="{Binding InCart}" />
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
+        <Button x:Name="deleteList" Text="Clear List" FontSize="24" />
         <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#535353" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
                 <Image Margin="0,0,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />

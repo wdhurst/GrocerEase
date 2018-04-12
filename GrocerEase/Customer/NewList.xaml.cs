@@ -12,10 +12,13 @@ namespace GrocerEase
         {
             InitializeComponent();
             addItem.Clicked += AddItem_Clicked;
+            deleteList.Clicked += DeleteList_Clicked;
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
             imgNewList.Source = ImageSource.FromResource("GrocerEase.new-list.png");
             imgNotifs.Source = ImageSource.FromResource("GrocerEase.notifications.png");
             imgHome.Source = ImageSource.FromResource("GrocerEase.home.png");
+            //checkImg.Source = ImageSource.FromResource("GrocerEase.check.png");
+
 
             //Tap Gesture Recognizer  
             var LayoutTap = new TapGestureRecognizer();
@@ -56,6 +59,12 @@ namespace GrocerEase
             });
         }
 
+        async void DeleteList_Clicked(object sender, EventArgs e)
+        {
+            await App.Database.DeleteAllAsync();
+
+        }
+
         async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             //((App)App.Current).ResumeAtTodoId = (e.SelectedItem as TodoItem).ID;
@@ -67,6 +76,7 @@ namespace GrocerEase
                     BindingContext = e.SelectedItem as ShoppingList
                 });
             }
+
         }
     }
 }
