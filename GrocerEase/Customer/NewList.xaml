@@ -35,7 +35,7 @@
             </StackLayout>
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckHome">
                 <Image Margin="0,0,0,0" x:Name="imgHome" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Home" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+                <Label Text="Account" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
         </StackLayout>
     </AbsoluteLayout>

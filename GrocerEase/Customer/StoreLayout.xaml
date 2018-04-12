@@ -2,16 +2,15 @@
 <ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.StoreLayout">
     <AbsoluteLayout Margin="0, 0, 0, 0">
         <ScrollView>
-        <StackLayout>
             <StackLayout>
-                <Image x:Name="imgStoreLayout" HorizontalOptions="Center" />
+                <StackLayout>
+                    <Image x:Name="imgStoreLayout" HorizontalOptions="Center" />
+                </StackLayout>
+                <StackLayout>
+                    <Image x:Name="imgDirectory" HorizontalOptions="Center" />
+                </StackLayout>
             </StackLayout>
-            <StackLayout>
-                <Image x:Name="imgDirectory" HorizontalOptions="Center" />
-            </StackLayout>
-        </StackLayout>
         </ScrollView>
-
         <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#535353" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
                 <Image Margin="0,0,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />
@@ -27,7 +26,7 @@
             </StackLayout>
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckHome">
                 <Image Margin="0,0,0,0" x:Name="imgHome" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Home" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+                <Label Text="Account" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
         </StackLayout>
     </AbsoluteLayout>
