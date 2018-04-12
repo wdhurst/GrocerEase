@@ -1,27 +1,11 @@
-<<<<<<< HEAD
-﻿<Properties StartupConfiguration="{EAF985EA-B6B3-4AFB-B263-951490268735}|Default">
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.FA439SF00197" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/itemPage.xaml.cs">
-    <Files>
-      <File FileName="GrocerEase/Customer/NewList.xaml.cs" Line="64" Column="13" />
-      <File FileName="GrocerEase/ShoppingListDatabase.cs" Line="1" Column="1" />
-      <File FileName="GrocerEase/Customer/NewList.xaml" Line="16" Column="64" />
-      <File FileName="GrocerEase/Customer/itemPage.xaml.cs" Line="1" Column="1" />
-=======
 ﻿<Properties StartupConfiguration="{78BFCFBF-5F8E-4D02-8E9D-5F9FF1074AC7}|Default">
   <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/StoreLayout.xaml.cs">
-    <Files>
-      <File FileName="GrocerEase/Customer/StoreLayout.xaml" Line="13" Column="22" />
-      <File FileName="GrocerEase/Customer/StoreLayout.xaml.cs" Line="4" Column="1" />
->>>>>>> 3bbd7f121dc88e65a544652df6f6fdf19c6b89fc
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9E535335-3E26-45A1-9E28-F1C4380F13F3" />
+  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A93C9854-C4C7-4634-A818-2AC262BD405E" />
 </Properties>
