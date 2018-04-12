@@ -1,12 +1,9 @@
 ﻿<Properties StartupConfiguration="{78BFCFBF-5F8E-4D02-8E9D-5F9FF1074AC7}|Default">
   <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/StoreLayout.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/StoreLayout.xaml.cs">
     <Files>
-      <File FileName="GrocerEase/GrocerEasePage.xaml" Line="14" Column="15" />
-      <File FileName="GrocerEase/Customer/NewList.xaml" Line="41" Column="15" />
-      <File FileName="GrocerEase/Customer/Reminders.xaml" Line="52" Column="1" />
-      <File FileName="GrocerEase/Customer/itemPage.xaml" Line="12" Column="15" />
-      <File FileName="GrocerEase/Customer/StoreLayout.xaml" Line="32" Column="22" />
+      <File FileName="GrocerEase/Customer/StoreLayout.xaml" Line="13" Column="22" />
+      <File FileName="GrocerEase/Customer/StoreLayout.xaml.cs" Line="4" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
