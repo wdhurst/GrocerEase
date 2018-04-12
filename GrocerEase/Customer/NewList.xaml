@@ -12,8 +12,8 @@
             <DataTemplate>
                 <ViewCell>
                     <StackLayout Margin="0,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                        <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
-                        <Image x:Name="checkImg" HorizontalOptions="Center" IsVisible="{Binding InCart}" />
+                        <Label x:name="itemTemp" Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                        <Image Source="GrocerEase.check.png" HorizontalOptions="Center" IsVisible="{Binding InCart}" />
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>

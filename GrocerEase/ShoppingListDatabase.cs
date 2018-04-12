@@ -50,7 +50,10 @@ namespace GrocerEase
 
         public Task<List<ShoppingList>> DeleteAllAsync()
         {
-            return database.QueryAsync<ShoppingList>("DELETE * FROM ShoppingList WHERE [InCart] = 1");
+            
+            database.DropTableAsync<ShoppingList>().Wait();
+            database.CreateTableAsync<ShoppingList>().Wait();
+            return database.Table<ShoppingList>().ToListAsync();
         }
     }
 }

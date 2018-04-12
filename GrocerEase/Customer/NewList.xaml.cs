@@ -61,8 +61,7 @@ namespace GrocerEase
 
         async void DeleteList_Clicked(object sender, EventArgs e)
         {
-            await App.Database.DeleteAllAsync();
-
+            listView.ItemsSource = await App.Database.DeleteAllAsync();
         }
 
         async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
