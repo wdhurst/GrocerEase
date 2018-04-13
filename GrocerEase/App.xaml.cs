@@ -43,6 +43,8 @@ namespace GrocerEase
         }
 
         public int ResumeAtShoppingListId { get; set; }
+        public DateTime current = DateTime.Today;
+
 
 
         protected override void OnStart()

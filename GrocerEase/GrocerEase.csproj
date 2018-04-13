@@ -130,6 +130,8 @@
     </Compile>
     <Compile Include="Database Classes\InventoryList.cs" />
     <Compile Include="InventoryListDataBase.cs" />
+    <Compile Include="Database Classes\ReminderList.cs" />
+    <Compile Include="ReminderListDatabase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SQLite-net">

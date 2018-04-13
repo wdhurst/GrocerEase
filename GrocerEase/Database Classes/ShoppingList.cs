@@ -7,6 +7,5 @@ namespace GrocerEase
         public int ID { get; set; }
         public string ItemName { get; set; }
         public bool InCart { get; set; }
-
     }
 }

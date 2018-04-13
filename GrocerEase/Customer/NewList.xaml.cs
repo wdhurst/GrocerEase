@@ -61,7 +61,11 @@ namespace GrocerEase
 
         async void DeleteList_Clicked(object sender, EventArgs e)
         {
-            listView.ItemsSource = await App.Database.DeleteAllAsync();
+            //if (App.Database.allInCart())
+                listView.ItemsSource = await App.Database.DeleteAllAsync();
+            //else
+              //  await DisplayAlert("Error", "Not all items in cart, clear list anyways?", "Yes", "No");
+                    
         }
 
         async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)

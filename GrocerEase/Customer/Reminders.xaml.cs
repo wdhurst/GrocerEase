@@ -31,17 +31,20 @@ namespace GrocerEase
 
             //Tap Gesture Recognizer  
             var LayoutTap = new TapGestureRecognizer();
-            LayoutTap.Tapped += (sender, e) => {
+            LayoutTap.Tapped += (sender, e) =>
+            {
                 App.Current.MainPage = new NavigationPage(new StoreLayout());
             };
             stckLayout.GestureRecognizers.Add(LayoutTap);
             var NewListTap = new TapGestureRecognizer();
-            NewListTap.Tapped += (sender, e) => {
+            NewListTap.Tapped += (sender, e) =>
+            {
                 App.Current.MainPage = new NavigationPage(new NewList());
             };
             stckNewList.GestureRecognizers.Add(NewListTap);
             var HomeTap = new TapGestureRecognizer();
-            HomeTap.Tapped += (sender, e) => {
+            HomeTap.Tapped += (sender, e) =>
+            {
                 App.Current.MainPage = new NavigationPage(new CustomerHome());
             };
             stckHome.GestureRecognizers.Add(HomeTap);
@@ -49,7 +52,6 @@ namespace GrocerEase
 
         void AddButton_Clicked(object sender, EventArgs e)
         {
-            DateTime current = DateTime.Today;
             DateTime timetoBuy = DateTime.Today;
             if (LengthType.SelectedIndex == 0)
             {
@@ -61,20 +63,8 @@ namespace GrocerEase
                 double numWeeks = LengthPick.SelectedIndex + 1;
                 timetoBuy.AddDays(numWeeks * 7);
             }
+             // need to somehow set reminderDate in the ReminderList class to timeToBuy?
 
-              DisplayAlert("Reminder ", "You need to buy" + itemBox.Text + " ", "OK");
-              item.Text = "we made it!";
-#if __ANDROID__
-           
-#endif
-
-        }
-        public bool checkTime(DateTime current, DateTime timetoBuy)
-        {
-            if (current > timetoBuy)
-                return true;
-            else
-                return false;
         }
     }
 }
