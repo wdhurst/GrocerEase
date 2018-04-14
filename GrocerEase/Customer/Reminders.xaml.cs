@@ -8,13 +8,6 @@ using Xamarin.Forms;
 
 
 
-public struct Reminder
-{
-    public int ID { get; set; }
-    public string date { get; set; }
-    public bool recurring { get; set; }
-    public string itemName { get; set; }
-};
 
 
 namespace GrocerEase
@@ -50,7 +43,7 @@ namespace GrocerEase
             stckHome.GestureRecognizers.Add(HomeTap);
         }
 
-        void AddButton_Clicked(object sender, EventArgs e)
+        async void AddButton_Clicked(object sender, EventArgs e)
         {
             DateTime timetoBuy = DateTime.Today;
             if (LengthType.SelectedIndex == 0)
@@ -63,8 +56,6 @@ namespace GrocerEase
                 double numWeeks = LengthPick.SelectedIndex + 1;
                 timetoBuy.AddDays(numWeeks * 7);
             }
-             // need to somehow set reminderDate in the ReminderList class to timeToBuy?
-
         }
     }
 }

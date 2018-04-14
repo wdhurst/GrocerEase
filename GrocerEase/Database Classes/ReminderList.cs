@@ -7,7 +7,6 @@ namespace GrocerEase
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         public string itemName { get; set; }
-        public DateTime reminderDate { get; set; }
-
+        public string reminderDate { get; set; }
     }
 }

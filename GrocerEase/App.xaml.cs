@@ -16,7 +16,7 @@ namespace GrocerEase
             InitializeComponent();
 
             MainPage = new GrocerEasePage();
-		}
+        }
 
         public static ShoppingListDataBase Database
         {
@@ -44,7 +44,6 @@ namespace GrocerEase
 
         public int ResumeAtShoppingListId { get; set; }
         public DateTime current = DateTime.Today;
-
 
 
         protected override void OnStart()

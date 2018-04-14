@@ -8,24 +8,9 @@
         <Label Margin="25" Text="Reminders" FontSize="35" TextColor="Black"/>
         <StackLayout Margin="10, 90, 0, 0">
             <Label Text="Item Name" x:Name="item"/>
-            <Entry x:Name="itemBox" />
-            <Picker x:Name="LengthPick" Title="Remind me in...">
-                <Picker.Items>
-                    <x:String>1</x:String>
-                    <x:String>2</x:String>
-                    <x:String>3</x:String>
-                    <x:String>4</x:String>
-                    <x:String>5</x:String>
-                    <x:String>6</x:String>
-                    <x:String>7</x:String>
-                </Picker.Items>
-            </Picker>
-            <Picker x:Name="LengthType" Title="Days or Weeks?">
-                <Picker.Items>
-                    <x:String>Days</x:String>
-                    <x:String>Weeks</x:String>
-                </Picker.Items>
-            </Picker>
+            <Entry x:Name="itemBox" Text="{Binding itemName}" />
+            <Label x:Name="dateBox" Text="Date to be reminded"/>
+            <Entry Text="{Binding reminderDate}"/>
         <!--<Switch x:Name="recurSwitch" Text="Recurring Reminder?"/> -->
             <Button x:Name="addButton" Text="Add Reminder" BackgroundColor="#c1ebd9" TextColor="Black" BorderWidth="2"/>
         </StackLayout>

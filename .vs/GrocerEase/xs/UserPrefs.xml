@@ -1,21 +1,18 @@
 ﻿<Properties StartupConfiguration="{EAF985EA-B6B3-4AFB-B263-951490268735}|Default">
   <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.FA439SF00197" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/App.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/Reminders.xaml.cs">
     <Files>
       <File FileName="GrocerEase/Customer/NewList.xaml.cs" Line="15" Column="54" />
       <File FileName="GrocerEase/ShoppingListDatabase.cs" Line="27" Column="114" />
-      <File FileName="GrocerEase/Customer/NewList.xaml" Line="15" Column="154" />
-      <File FileName="GrocerEase/Customer/itemPage.xaml.cs" Line="25" Column="54" />
-      <File FileName="Source Not Available" />
-      <File FileName="GrocerEase/Customer/StoreLayout.xaml" Line="34" Column="15" />
-      <File FileName="GrocerEase/App.xaml.cs" Line="46" Column="50" />
-      <File FileName="GrocerEase/Customer/Reminders.xaml.cs" Line="62" Column="14" />
-      <File FileName="GrocerEase/Database Classes/ReminderList.cs" Line="10" Column="47" />
-      <File FileName="GrocerEase/Database Classes/ShoppingList.cs" Line="10" Column="6" />
-      <File FileName="GrocerEase/ReminderListDatabase.cs" Line="26" Column="99" />
-      <File FileName="GrocerEase/Customer/Reminders.xaml" Line="12" Column="65" />
+      <File FileName="GrocerEase/Customer/NewList.xaml" Line="15" Column="155" />
+      <File FileName="GrocerEase/Customer/itemPage.xaml.cs" Line="4" Column="21" />
+      <File FileName="GrocerEase/Customer/StoreLayout.xaml" Line="33" Column="15" />
+      <File FileName="GrocerEase/App.xaml.cs" Line="65" Column="1" />
+      <File FileName="GrocerEase/Customer/Reminders.xaml.cs" Line="46" Column="15" />
+      <File FileName="GrocerEase/ReminderListDatabase.cs" Line="60" Column="1" />
+      <File FileName="GrocerEase/Customer/Reminders.xaml" Line="13" Column="51" />
       <File FileName="GrocerEase/Customer/itemPage.xaml" Line="12" Column="15" />
-      <File FileName="GrocerEase/App.xaml" Line="25" Column="1" />
+      <File FileName="GrocerEase/Database Classes/ReminderList.cs" Line="10" Column="49" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
