@@ -5,24 +5,24 @@ using Xamarin.Forms;
 
 namespace GrocerEase
 {
-    public partial class itemPage : ContentPage
+    public partial class addReminder : ContentPage
     {
-        public itemPage()
+        public addReminder()
         {
             InitializeComponent();
         }
 
-    async void OnSaveClicked(object sender, EventArgs e)
+        async void OnSaveClicked(object sender, EventArgs e)
         {
-            var item = (ShoppingList)BindingContext;
-            await App.DatabaseS.SaveItemAsync(item);
+            var item = (ReminderList)BindingContext;
+            await App.DatabaseR.SaveItemAsync(item);
             await Navigation.PopAsync();
         }
 
         async void OnDeleteClicked(object sender, EventArgs e)
         {
-            var item = (ShoppingList)BindingContext;
-            await App.DatabaseS.DeleteItemAsync(item);
+            var item = (ReminderList)BindingContext;
+            await App.DatabaseR.DeleteItemAsync(item);
             await Navigation.PopAsync();
         }
 

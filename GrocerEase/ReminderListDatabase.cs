@@ -55,5 +55,11 @@ namespace GrocerEase
             database.CreateTableAsync<ReminderList>().Wait();
             return database.Table<ReminderList>().ToListAsync();
         }
+
+        public Task<List<ReminderList>> timetoBuy(string current)
+        {
+            var itstime =  database.Table<ReminderList>().Where(i => i.reminderDate == current).ToListAsync();
+            return itstime;
+        }
     }
 }

@@ -48,7 +48,7 @@ namespace GrocerEase
             base.OnAppearing();
             // Reset the 'resume' id, since we just want to re-start here
             ((App)App.Current).ResumeAtShoppingListId = -1;
-            listView.ItemsSource = await App.Database.GetItemsAsync();
+            listView.ItemsSource = await App.DatabaseS.GetItemsAsync();
         }
 
         async void AddItem_Clicked(object sender, EventArgs e)
@@ -62,7 +62,7 @@ namespace GrocerEase
         async void DeleteList_Clicked(object sender, EventArgs e)
         {
             //if (App.Database.allInCart())
-                listView.ItemsSource = await App.Database.DeleteAllAsync();
+                listView.ItemsSource = await App.DatabaseS.DeleteAllAsync();
             //else
               //  await DisplayAlert("Error", "Not all items in cart, clear list anyways?", "Yes", "No");
                     

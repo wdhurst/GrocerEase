@@ -8,8 +8,9 @@ namespace GrocerEase
 {
     public partial class App : Application
     {
-        static ShoppingListDataBase database;
-        static InventoryListDataBase database2;
+        static ShoppingListDataBase databaseS;
+        static InventoryListDataBase databaseI;
+        static ReminderListDataBase databaseR;
 
         public App()
         {
@@ -18,32 +19,44 @@ namespace GrocerEase
             MainPage = new GrocerEasePage();
         }
 
-        public static ShoppingListDataBase Database
+        public static ShoppingListDataBase DatabaseS
         {
             get
             {
-                if (database == null)
+                if (databaseS == null)
                 {
-                    database = new  ShoppingListDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("ShoppingListSQLite.db3"));
+                    databaseS = new ShoppingListDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("ShoppingListSQLite.db3"));
                 }
-                return database;
+                return databaseS;
             }
         }
 
-        public static InventoryListDataBase DataBase2
+        public static InventoryListDataBase DatabaseI
         {
-            get 
+            get
             {
-                if (database2 == null)
+                if (databaseI == null)
                 {
-                    database2 = new InventoryListDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("InventoryListSQLite.db3"));
+                    databaseI = new InventoryListDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("InventoryListSQLite.db3"));
                 }
-                return database2;
+                return databaseI;
+            }
+        }
+        public static ReminderListDataBase DatabaseR
+        {
+            get
+            {
+                if (databaseR == null)
+                {
+                    databaseR = new ReminderListDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("ReminderListSQLite.db3"));
+                }
+                return databaseR;
             }
         }
 
         public int ResumeAtShoppingListId { get; set; }
-        public DateTime current = DateTime.Today;
+        public int ResumeAtReminderListId { get; set; }
+        public string current { get; set;}
 
 
         protected override void OnStart()
