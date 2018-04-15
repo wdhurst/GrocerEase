@@ -19,7 +19,7 @@
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-        <Button x:Name="deleteList" Text="Clear List" FontSize="24" Margin="100,450,0,0" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White"/>
+        <Button x:Name="deleteList" Text="Clear List" FontSize="24" Margin="100,450,0,0" HorizontalOptions="Center" BackgroundColor="Red" TextColor="Black"/>
         <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#535353" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
                 <Image Margin="0,0,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />

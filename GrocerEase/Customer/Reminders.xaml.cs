@@ -13,6 +13,8 @@ namespace GrocerEase
             InitializeComponent();
             addItem.Clicked += AddItem_Clicked;
             deleteList.Clicked += DeleteList_Clicked;
+            activeRems.Clicked += ActiveRems_Clicked;
+            allRems.Clicked += AllRems_Clicked;
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
             imgNewList.Source = ImageSource.FromResource("GrocerEase.new-list.png");
             imgNotifs.Source = ImageSource.FromResource("GrocerEase.notifications.png");
@@ -44,9 +46,10 @@ namespace GrocerEase
         {
             base.OnAppearing();
             // Reset the 'resume' id, since we just want to re-start here
-            ((App)App.Current).current = DateTime.Today.ToString();
+            ((App)App.Current).ResumeAtReminderListId = -1;
             listView.ItemsSource = await App.DatabaseR.GetItemsAsync();
         }
+
 
         async void AddItem_Clicked(object sender, EventArgs e)
         {
@@ -76,6 +79,22 @@ namespace GrocerEase
                     BindingContext = e.SelectedItem as ReminderList
                 });
             }
+
+        }
+
+        async void ActiveRems_Clicked(object sender, EventArgs e)
+        {
+            ((App)App.Current).current = DateTime.Today.ToString();
+            string check = ((App)App.Current).current.Remove(9);
+            listView.ItemsSource = await App.DatabaseR.timetoBuy(check);
+            if (listView.ItemsSource.GetHashCode() != 413897656)
+                await DisplayAlert("Reminder", "Theres an item you wanted to purchase today!", "OK");
+        }
+
+        async void AllRems_Clicked(object sender, EventArgs e)
+        {
+            ((App)App.Current).ResumeAtReminderListId = -1;
+            listView.ItemsSource = await App.DatabaseR.GetItemsAsync();
 
         }
     }
