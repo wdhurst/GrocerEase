@@ -6,7 +6,7 @@
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
         <Label x:Name="topLabel" Margin="25" Text="Reminder List" FontSize="35" TextColor="Black" Grid.Column="0"/>
-        <Button x:Name="addItem" Margin="260, 0, 0, 0" WidthRequest="100" HeightRequest="70" Text="Add Reminder" BackgroundColor="#ccffd7" TextColor="Black" BorderWidth="2" BorderRadius="0"/>
+        <Button x:Name="addItem" Margin="314, 0, 0, 0" WidthRequest="100" HeightRequest="70" Text="Add Reminder" BackgroundColor="#ccffd7" TextColor="Black" BorderWidth="2" BorderRadius="0"/>
         <ListView x:Name="listView" Margin="0, 80, 0, 0" ItemSelected="OnListItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
