@@ -14,7 +14,7 @@ namespace GrocerEase
             addItem.Clicked += AddItem_Clicked;
             deleteList.Clicked += DeleteList_Clicked;
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
-            imgNewList.Source = ImageSource.FromResource("GrocerEase.new-list.png");
+            imgLists.Source = ImageSource.FromResource("GrocerEase.lists.png");
             imgNotifs.Source = ImageSource.FromResource("GrocerEase.notifications.png");
             imgHome.Source = ImageSource.FromResource("GrocerEase.home.png");
             //checkImg.Source = ImageSource.FromResource("GrocerEase.check.png");
