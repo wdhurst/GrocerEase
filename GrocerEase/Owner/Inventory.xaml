@@ -2,7 +2,7 @@
 <ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.Owner.Inventory">
     <AbsoluteLayout Margin="0, 0, 0, 0">
         <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 600, 1">
-            <BoxView HeightRequest="70" BackgroundColor="#2ab748" HorizontalOptions="FillAndExpand" />
+            <BoxView HeightRequest="85" BackgroundColor="#2ab748" HorizontalOptions="FillAndExpand" />
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
                 <ListView x:Name="listView" Margin="0, 80, 0, 0" ItemSelected="OnListItemSelected">
@@ -18,7 +18,7 @@
         </ListView.ItemTemplate>
     </ListView>
         <Button x:Name="deleteList" Text="Clear" FontSize="24" Margin="281,618,0,0" BackgroundColor="Red" TextColor="Black" WidthRequest="128" CornerRadius="0"/>
-        <Label Margin="25" Text="GrocerEase" FontSize="35" TextColor="Black"/>
+        <Label Margin="30" Text="GrocerEase" FontSize="35" TextColor="Black"/>
         <StackLayout Margin = "10,78,0,0">
             <Button x:Name="NewIn" HeightRequest="48" WidthRequest="110" Text="New Inventory" TextColor="Black"  BackgroundColor="#ccffd7" BorderWidth ="2"/>
             
