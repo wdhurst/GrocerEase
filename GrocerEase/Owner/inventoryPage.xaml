@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.inventoryPage">
+    <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+        <Label Text="Item Name"/>
+        <Entry Text="{Binding ItemName}"/>
+        <Label Text="Price" />
+        <Entry Text="{Binding Price}" />
+        <Label Text="Category"/>
+        <Entry Text="{Binding Category}"/>
+        <Label Text="Brand"/>
+        <Entry Text="{Binding Brand}"/>
+        <Button Text="Save" Clicked="OnSaveClicked" />
+        <Button Text="Delete" Clicked="OnDeleteClicked"/>
+        <Button Text="Cancel" Clicked="OnCancelClicked"/>
+    </StackLayout>
+</ContentPage>

@@ -90,6 +90,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="cart-dark.png" />
     <EmbeddedResource Include="cart-light.png" />
+    <EmbeddedResource Include="Owner\inventoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -141,6 +145,9 @@
     <Compile Include="ReminderListDatabase.cs" />
     <Compile Include="Customer\addReminder.xaml.cs">
       <DependentUpon>addReminder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Owner\inventoryPage.xaml.cs">
+      <DependentUpon>inventoryPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
