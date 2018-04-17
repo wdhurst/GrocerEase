@@ -53,6 +53,10 @@ namespace GrocerEase
             database.CreateTableAsync<InventoryList>().Wait();
             return database.Table<InventoryList>().ToListAsync();
         }
+        public Task<List<InventoryList>> inInventory(string current)
+        {
+            return database.Table<InventoryList>().Where(i => i.ItemName.Contains(current)).ToListAsync();
+        }
     }
 }
 

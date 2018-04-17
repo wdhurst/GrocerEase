@@ -30,7 +30,7 @@ namespace GrocerEase
             var NotifsTap = new TapGestureRecognizer();
             NotifsTap.Tapped += (sender, e) =>
             {
-                App.Current.MainPage = new NavigationPage(new Reminders());
+                App.Current.MainPage = new NavigationPage(new Owner.Promotions());
             };
             stckNotifs.GestureRecognizers.Add(NotifsTap);
 
