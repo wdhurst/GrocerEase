@@ -17,7 +17,7 @@ namespace GrocerEase
             imgLists.Source = ImageSource.FromResource("GrocerEase.lists.png");
             imgNotifs.Source = ImageSource.FromResource("GrocerEase.notifications.png");
             imgHome.Source = ImageSource.FromResource("GrocerEase.home.png");
-            //imgItem.Image = ImageSource.FromResource("GrocerEase.new-list.png");
+            //imgItem.Source = ImageSource.FromResource("GrocerEase.new-list.png");
             //checkImg.Source = ImageSource.FromResource("GrocerEase.check.png");
 
 

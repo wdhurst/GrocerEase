@@ -11,4 +11,7 @@
         <Button Text="Don't have an account? Click here to sign up" x:Name="CustmerSignUp" FontSize="10" BackgroundColor="Transparent"></Button>
         <Button Text="Are you a business manager? Click here to sign up" x:Name="OwnerSignUp" FontSize="10" BackgroundColor="Transparent"></Button>
     </StackLayout>
+    <StackLayout>
+        <Image Source="{local:ImageResource GrocerEase.cart-dark.png}" />
+    </StackLayout>
 </ContentPage>
