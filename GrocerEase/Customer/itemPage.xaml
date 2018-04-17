@@ -2,11 +2,22 @@
 <ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.itemPage">
     <StackLayout Margin="20" VerticalOptions="StartAndExpand">
         <Label Text="Item Name"/>
-        <Entry Text="{Binding ItemName}"/>
-        <Label Text="In Cart" />
-        <Switch IsToggled="{Binding InCart}" />
-        <Button Text="Save" Clicked="OnSaveClicked" />
-        <Button Text="Delete" Clicked="OnDeleteClicked"/>
-        <Button Text="Cancel" Clicked="OnCancelClicked"/>
+        <Entry Text="{Binding ItemName}" Placeholder="Milk, Eggs, Etc."/>
+        <ListView>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label Text="In Cart" Margin="0,20,0,0"/>
+        <Switch IsToggled="{Binding InCart}"/>
+        <Button Text="Save" FontSize="20" Margin="0,20,0,50" Clicked="OnSaveClicked" TextColor="Black" BackgroundColor="#ccffd7"/>
+        <Button Text="Delete" FontSize="18" Clicked="OnDeleteClicked" TextColor="White" BackgroundColor="#535353"/>
+        <Button Text="Cancel" FontSize="18" Clicked="OnCancelClicked" TextColor="White" BackgroundColor="#535353"/>
     </StackLayout>
 </ContentPage>
