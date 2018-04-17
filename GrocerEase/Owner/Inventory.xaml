@@ -2,7 +2,7 @@
 <ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.Owner.Inventory">
     <AbsoluteLayout Margin="0, 0, 0, 0">
         <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 600, 1">
-            <BoxView HeightRequest="85" BackgroundColor="#2ab748" HorizontalOptions="FillAndExpand" />
+            <BoxView HeightRequest="85" BackgroundColor="#40dca0" HorizontalOptions="FillAndExpand" />
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
                 <ListView x:Name="listView" Margin="0, 80, 0, 0" ItemSelected="OnListItemSelected">

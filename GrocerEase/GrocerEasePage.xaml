@@ -5,10 +5,10 @@
 <ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GrocerEase" x:Class="GrocerEase.GrocerEasePage">
     <StackLayout Margin="20,50,20,50">
         <Label Text="GrocerEase" HorizontalOptions="Center" FontSize="45" Margin="0,0,0,75"></Label>
-        <Label Text="Already have an account?" HorizontalTextAlignment="Center" Margin="0,0,0,25" FontSize="20"></Label>
-        <Button Text="Tap Here To Login" x:Name="LogIn" FontSize="16"></Button>
-        <Label Text="Don't have an account? Select one of the options below to sign up now!" HorizontalTextAlignment="Center" Margin="0,50,0,25" FontSize="20"></Label>
-        <Button Text="Customer" x:Name="CustmerSignUp" FontSize="16" BackgroundColor="Transparent"></Button>
-        <Button Text="Business Manager" x:Name="OwnerSignUp" FontSize="16" BackgroundColor="Transparent"></Button>
+        <Label Text="You are currently not logged in." HorizontalTextAlignment="Center" Margin="0,0,0,25" FontSize="20"></Label>
+        <Button Text="Login" x:Name="LogIn" FontSize="30" TextColor="Black" BackgroundColor="#ccffd7"></Button>
+        <Label Text="Create an account:" HorizontalTextAlignment="Center" Margin="0,60,0,15" FontSize="25"></Label>
+        <Button Text="Sign up as Customer" x:Name="CustmerSignUp" FontSize="18" TextColor="White" BackgroundColor="#535353"></Button>
+        <Button Text="Sign up as Business" x:Name="OwnerSignUp" FontSize="18" TextColor="White" BackgroundColor="#535353"></Button>
     </StackLayout>
 </ContentPage>
