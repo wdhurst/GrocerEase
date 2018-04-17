@@ -13,15 +13,15 @@ namespace GrocerEase
             imgDirectory.Source = ImageSource.FromResource("GrocerEase.directory.jpg");
 
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
-            imgNewList.Source = ImageSource.FromResource("GrocerEase.new-list.png");
+            imgLists.Source = ImageSource.FromResource("GrocerEase.lists.png");
             imgNotifs.Source = ImageSource.FromResource("GrocerEase.notifications.png");
             imgHome.Source = ImageSource.FromResource("GrocerEase.home.png");
 
-            var NewListTap = new TapGestureRecognizer();
-            NewListTap.Tapped += (sender, e) => {
+            var ListsTap = new TapGestureRecognizer();
+            ListsTap.Tapped += (sender, e) => {
                 App.Current.MainPage = new NavigationPage(new NewList());
             };
-            stckNewList.GestureRecognizers.Add(NewListTap);
+            stckLists.GestureRecognizers.Add(ListsTap);
             var NotifsTap = new TapGestureRecognizer();
             NotifsTap.Tapped += (sender, e) => {
                 App.Current.MainPage = new NavigationPage(new Reminders());

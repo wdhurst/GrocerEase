@@ -88,6 +88,8 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="cart-dark.png" />
+    <EmbeddedResource Include="cart-light.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">

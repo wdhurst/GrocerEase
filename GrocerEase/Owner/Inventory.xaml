@@ -2,23 +2,58 @@
 <ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.Owner.Inventory">
     <AbsoluteLayout Margin="0, 0, 0, 0">
         <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 600, 1">
-            <BoxView HeightRequest="70" BackgroundColor="#40dca0" HorizontalOptions="FillAndExpand" />
+            <BoxView HeightRequest="85" BackgroundColor="#40dca0" HorizontalOptions="FillAndExpand" />
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
-        <Label Margin="25" Text="Inventory" FontSize="35" TextColor="Black"/>
+                <ListView x:Name="listView" Margin="0, 80, 0, 0" ItemSelected="OnListItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Margin="0,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
+                        <Image Source="GrocerEase.check.png" HorizontalOptions="End" IsVisible="{Binding InCart}" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+        <Button x:Name="deleteList" Text="Clear" FontSize="24" Margin="281,618,0,0" BackgroundColor="Red" TextColor="Black" WidthRequest="128" CornerRadius="0"/>
+        <Label Margin="30" Text="GrocerEase" FontSize="35" TextColor="Black"/>
+        <StackLayout Margin = "10,78,0,0">
+            <Button x:Name="NewIn" HeightRequest="48" WidthRequest="110" Text="New Inventory" TextColor="Black"  BackgroundColor="#ccffd7" BorderWidth ="2"/>
+            
+        </StackLayout>
+        <StackLayout Margin ="250,78,0,0">
+            <Button  x:Name="LoadIn"  HeightRequest="48" WidthRequest="110" Text="Load Inventory" BackgroundColor="#ccffd7" TextColor="Black" BorderWidth="2" />
+        </StackLayout>
 
-        <StackLayout AbsoluteLayout.LayoutBounds="1,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#535353" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+
+           <StackLayout Margin="122, 155, 0, 0">
+            <Picker Title="Brand Name ?" x:Name="brand"/>
+            <Picker Title ="Category ?" x:Name="cat"/>
+            <Picker Title="Aisle#" x:Name="aisle"/>
+            <Picker x:Name="NumberOfItems" Title="How Many#">
+            </Picker>
+            <Picker x:Name="Price" Title="$0.00">
+                <Picker.Items>
+                    <x:String>Price</x:String>
+                </Picker.Items>
+            </Picker>
+        <!--<Switch x:Name="recurSwitch" Text="Recurring Reminder?"/> -->
+            <Button x:Name="addButton" WidthRequest="130" Text="Add To Inventory" BackgroundColor="#ccffd7" TextColor="Black" BorderWidth="2"/>
+        </StackLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">
-                <Image Margin="0,10,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Store Layout" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+                <Image Margin="0,0,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}" />
+                <Label Text="Store Layout" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckInventory">
-                <Image Margin="0,10,0,0" x:Name="imgInventory" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Inventory" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+                <Image Margin="0,0,0,0" x:Name="imgInventory" Style="{StaticResource ButtonNavigationBarImageStyle}" />
+                <Label Text="Inventory" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckPromos">
-                <Image Margin="0,10,0,0" x:Name="imgPromos" Style="{StaticResource ButtonNavigationBarImageStyle}" />
-                <Label Text="Promotions" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
+                <Image Margin="0,0,0,0" x:Name="imgPromos" Style="{StaticResource ButtonNavigationBarImageStyle}" />
+                <Label Text="Promotions" Style="{StaticResource ButtonNavigationBarLabelStyle}"></Label>
             </StackLayout>
         </StackLayout>
     </AbsoluteLayout>
