@@ -19,7 +19,7 @@ namespace GrocerEase.Owner
             Title = "Category";
             Padding = new Thickness(0, 20, 0, 0);
             var listView = new ListView();
-            listView.ItemsSource = Data.CategoryList;
+            //###listView.ItemsSource = Data.CategoryList;
             Content = listView; 
             InitializeComponent();
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
@@ -33,7 +33,7 @@ namespace GrocerEase.Owner
                 App.Current.MainPage = new NavigationPage(new OwnerStoreLayout());
                 stckLayout.BackgroundColor = Color.Teal;
             };
-            NewIn.GestureReconizers.Add(NewTap);
+            //###NewIn.GestureReconizers.Add(NewTap);
             var NewInventory = new TapGestureRecognizer();
             NewInventory.Tapped += (sender, e) =>
             {
@@ -48,15 +48,15 @@ namespace GrocerEase.Owner
                 LoadIn.IsVisible =false;
 
             };
-            LoadIn.GestureReconizers.Add(LoadTap);
-            var LoadInvent = new TapGestureRecongnizer();
-            LoadInvent.Tapped += (sender, e) =>
+            //###LoadIn.GestureReconizers.Add(LoadTap);
+            //###var LoadInvent = new TapGestureRecongnizer();
+            //###LoadInvent.Tapped += (sender, e) =>
             {
                 //Load Inventory
             };
-            addButton.GestureReconizer.Add(addInvent);
-            var addInventory = new TapGestureReconizer();
-            addInventory.Tapped += (sender, e) =>
+            //###addButton.GestureReconizer.Add(addInvent);
+            //###var addInventory = new TapGestureReconizer();
+            //###addInventory.Tapped += (sender, e) =>
             {
                 brand.IsVisible = false;
                 cat.IsVisible = false;
