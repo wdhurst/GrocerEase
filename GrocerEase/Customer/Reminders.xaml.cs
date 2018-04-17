@@ -87,8 +87,8 @@ namespace GrocerEase
             ((App)App.Current).current = DateTime.Today.ToString();
             string check = ((App)App.Current).current.Remove(9);
             listView.ItemsSource = await App.DatabaseR.timetoBuy(check);
-            if (listView.ItemsSource.GetHashCode() != 413897656)
-                await DisplayAlert("Reminder", "Theres an item you wanted to purchase today!", "OK");
+            //if (listView.ItemsSource.ToString() != "") Need some way to check that the list is empty and display an alert if it isnt
+                //await DisplayAlert("Reminder", "Theres an item you wanted to purchase today!", "OK"); 
         }
 
         async void AllRems_Clicked(object sender, EventArgs e)
