@@ -21,18 +21,18 @@ namespace GrocerEase
 
 
             //Tap Gesture Recognizer  
-            var LayoutTap = new TapGestureRecognizer();
-            LayoutTap.Tapped += (sender, e) =>
+            var OwnerLayoutTap = new TapGestureRecognizer();
+            OwnerLayoutTap.Tapped += (sender, e) =>
             {
-                App.Current.MainPage = new NavigationPage(new StoreLayout());
+                //App.Current.MainPage = new NavigationPage(new OwnerStoreLayout());
             };
-            stckLayout.GestureRecognizers.Add(LayoutTap);
-            var NotifsTap = new TapGestureRecognizer();
-            NotifsTap.Tapped += (sender, e) =>
+            stckOwnerLayout.GestureRecognizers.Add(OwnerLayoutTap);
+            var PromosTap = new TapGestureRecognizer();
+            PromosTap.Tapped += (sender, e) =>
             {
                 App.Current.MainPage = new NavigationPage(new Owner.Promotions());
             };
-            stckNotifs.GestureRecognizers.Add(NotifsTap);
+            stckPromos.GestureRecognizers.Add(PromosTap);
 
         }
 
