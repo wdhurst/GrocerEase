@@ -16,7 +16,7 @@ namespace GrocerEase
         {
             while (search.IsFocused)
             {
-                listview.ItemsSource = await App.DatabaseI.inInventory(search.Text);
+                    listview.ItemsSource = await App.DatabaseI.inInventory(search.Text);
             }
             listview.ItemsSource = null;
         }
