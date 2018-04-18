@@ -1,21 +1,14 @@
-﻿<Properties StartupConfiguration="{EAF985EA-B6B3-4AFB-B263-951490268735}|Default">
+﻿<Properties StartupConfiguration="{78BFCFBF-5F8E-4D02-8E9D-5F9FF1074AC7}|Default">
   <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/itemPage.xaml">
-    <Files>
-      <File FileName="GrocerEase/Owner/Inventory.xaml.cs" Line="38" Column="9" />
-      <File FileName="GrocerEase/InventoryListDataBase.cs" Line="59" Column="10" />
-      <File FileName="GrocerEase/ReminderListDatabase.cs" Line="59" Column="7" />
-      <File FileName="GrocerEase/Customer/itemPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="GrocerEase/Customer/itemPage.xaml" Line="23" Column="15" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint hitAction="PrintExpression" traceExpression="value of item is {item}" file="/Users/DEAN/GrocerEase/Customer/Reminders.xaml.cs" relfile="GrocerEase/Customer/Reminders.xaml.cs" line="58" column="1" />
-      <Breakpoint hitAction="PrintExpression" traceExpression="value of list = {listView.ItemsSource.ToString()}" file="/Users/DEAN/GrocerEase/Customer/Reminders.xaml.cs" relfile="GrocerEase/Customer/Reminders.xaml.cs" line="90" column="1" />
+      <Breakpoint hitAction="PrintExpression" traceExpression="value of item is {item}" file="/Users/mitchell/Documents/GitHub/GrocerEase/GrocerEase/Customer/Reminders.xaml.cs" relfile="GrocerEase/Customer/Reminders.xaml.cs" line="58" column="1" />
+      <Breakpoint hitAction="PrintExpression" traceExpression="value of list = {listView.ItemsSource.ToString()}" file="/Users/mitchell/Documents/GitHub/GrocerEase/GrocerEase/Customer/Reminders.xaml.cs" relfile="GrocerEase/Customer/Reminders.xaml.cs" line="90" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4EE9ED2E-B385-4FB6-B212-D843DE19D161" />
 </Properties>
