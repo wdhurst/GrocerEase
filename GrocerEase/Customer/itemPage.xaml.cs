@@ -12,6 +12,16 @@ namespace GrocerEase
             InitializeComponent();
         }
 
+        async void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+                var item = (ShoppingList)BindingContext;
+                await App.DatabaseS.SaveItemAsync(item);
+                await Navigation.PopAsync();
+            }
+        }
+
         async void Handle_Focused(object sender, Xamarin.Forms.FocusEventArgs e)
         {
             while (search.IsFocused)

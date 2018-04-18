@@ -3,14 +3,14 @@
     <StackLayout Margin="20" VerticalOptions="StartAndExpand">
         <Label Text="Item Name"/>
         <Entry Text="{Binding ItemName}" Placeholder="Milk, Eggs, Etc." x:Name="search" Focused="Handle_Focused"/>
-        <ListView x:Name="listview">
+        <ListView x:Name="listview" ItemSelected="Handle_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout>
                             <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
-                            <Label Text="{Binding Price}" VerticalTextAlignment="Center" HorizontalOptions="End" FontSize="24" TextColor="Black"/>
-                            <Label Text="{Binding Brand}" VerticalTextAlignment="Center" HorizontalOptions="Center" FontSize="24" TextColor="Black"/>
+                            <Label Text="{Binding Brand}" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="24" TextColor="Black"/>
+                            <Label Text="{Binding Price}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" FontSize="24" TextColor="Black"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
