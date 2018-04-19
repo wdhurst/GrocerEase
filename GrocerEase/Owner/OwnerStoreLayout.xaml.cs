@@ -2,6 +2,8 @@
 using System.Threading.Tasks;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
+using Plugin.Permissions;
+using Plugin.Permissions.Abstractions;
 using Xamarin.Forms;
 
 namespace GrocerEase.Owner
@@ -39,14 +41,42 @@ namespace GrocerEase.Owner
             };
             stckHome.GestureRecognizers.Add(HomeTap);
         }
+<<<<<<< HEAD
+=======
+
+        async void permission()
+        {
+            var cameraStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Camera);
+            var storageStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Storage);
+
+            if (cameraStatus != PermissionStatus.Granted || storageStatus != PermissionStatus.Granted)
+            {
+                var results = await CrossPermissions.Current.RequestPermissionsAsync(new[] { Permission.Camera, Permission.Storage });
+                cameraStatus = results[Permission.Camera];
+                storageStatus = results[Permission.Storage];
+            }
+
+            if (cameraStatus == PermissionStatus.Granted && storageStatus == PermissionStatus.Granted)
+            {
+                var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+                {
+                    Directory = "Sample",
+                    Name = "test.jpg"
+                });
+            }
+            else
+            {
+                await DisplayAlert("Permissions Denied", "Unable to take photos.", "OK");
+                //On iOS you may want to send your user to the settings screen.
+                //CrossPermissions.Current.OpenAppSettings();
+            }
+        }
+>>>>>>> e7cfbff1fbd8628e5d1a66cfc5ae0bdf3050cdfc
 
         async void UploadButton_Clicked(object sender, EventArgs e)
         {
             if (CrossMedia.Current.IsPickPhotoSupported)
                 await CrossMedia.Current.PickPhotoAsync();
         }
-
-        //bool IsPickPhotoSupported { get; }
-        //Task<MediaFile> PickPhotoAsync(PickMediaOptions options = null);
     }
 }
