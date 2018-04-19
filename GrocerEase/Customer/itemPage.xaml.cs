@@ -12,11 +12,20 @@ namespace GrocerEase
             InitializeComponent();
         }
 
+        void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+                var item = listview.SelectedItem;
+                search.Text=item.ToString();
+            }
+        }
+
         async void Handle_Focused(object sender, Xamarin.Forms.FocusEventArgs e)
         {
             while (search.IsFocused)
             {
-                listview.ItemsSource = await App.DatabaseI.inInventory(search.Text);
+                    listview.ItemsSource = await App.DatabaseI.inInventory(search.Text);
             }
             listview.ItemsSource = null;
         }

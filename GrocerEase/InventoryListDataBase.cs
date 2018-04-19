@@ -57,6 +57,8 @@ namespace GrocerEase
         {
             return database.Table<InventoryList>().Where(i => i.ItemName.Contains(current)).ToListAsync();
         }
-    }
+
+
+	}
 }
 
