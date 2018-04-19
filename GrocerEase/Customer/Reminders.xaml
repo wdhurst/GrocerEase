@@ -5,7 +5,7 @@
             <BoxView HeightRequest="85" BackgroundColor="#40dca0" HorizontalOptions="FillAndExpand" />
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
-        <Label x:Name="topLabel" Margin="30" Text="Reminder List" FontSize="35" TextColor="Black" Grid.Column="0"/>
+        <Label x:Name="topLabel" Margin="30" Text="Reminders" FontSize="35" TextColor="Black" Grid.Column="0"/>
         <Button x:Name="addItem" WidthRequest="110" HeightRequest="65" Text="Add Reminder" BackgroundColor="#ccffd7" TextColor="Black" BorderWidth="2" BorderRadius="0">
             <Button.Margin>
                 <OnPlatform x:TypeArguments="Thickness">

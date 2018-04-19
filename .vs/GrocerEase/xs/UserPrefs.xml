@@ -1,33 +1,14 @@
-<<<<<<< HEAD
 ﻿<Properties StartupConfiguration="{EAF985EA-B6B3-4AFB-B263-951490268735}|Default">
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/App.xaml.cs">
+  <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.FA439SF00197" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Owner/PromotionPage.xaml.cs">
     <Files>
-      <File FileName="GrocerEase/Customer/CustomerHome.xaml.cs" Line="22" Column="46" />
-      <File FileName="GrocerEase/Customer/CustomerHome.xaml" Line="87" Column="15" />
-      <File FileName="GrocerEase/Customer/NewList.xaml" Line="105" Column="15" />
-      <File FileName="GrocerEase/Owner/CreateAccountOwner.xaml" Line="22" Column="1" />
-      <File FileName="GrocerEase/Customer/StoreLayout.xaml" Line="89" Column="15" />
-      <File FileName="GrocerEase/Customer/Reminders.xaml" Line="146" Column="15" />
-      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml.cs" Line="44" Column="10" />
-      <File FileName="GrocerEase/Owner/OwnerHome.xaml.cs" Line="35" Column="6" />
-      <File FileName="GrocerEase/Owner/Inventory.xaml.cs" Line="81" Column="6" />
-      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml" Line="94" Column="1" />
-      <File FileName="GrocerEase/PromotionListDataBase.cs" Line="13" Column="29" />
-      <File FileName="GrocerEase/Database Classes/PromotionList.cs" Line="14" Column="81" />
-      <File FileName="GrocerEase/Database Classes/InventoryList.cs" Line="1" Column="1" />
-      <File FileName="GrocerEase/Database Classes/ReminderList.cs" Line="17" Column="2" />
-      <File FileName="GrocerEase/ReminderListDatabase.cs" Line="65" Column="1" />
-      <File FileName="GrocerEase/InventoryListDataBase.cs" Line="65" Column="1" />
-      <File FileName="GrocerEase/App.xaml.cs" Line="14" Column="38" />
-=======
-﻿<Properties StartupConfiguration="{78BFCFBF-5F8E-4D02-8E9D-5F9FF1074AC7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Owner/OwnerStoreLayout.xaml.cs">
-    <Files>
-      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml" Line="94" Column="1" />
-      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml.cs" Line="39" Column="10" />
-      <File FileName="packages/Plugin.Permissions.2.2.1/readme.txt" Line="1" Column="1" />
->>>>>>> e7cfbff1fbd8628e5d1a66cfc5ae0bdf3050cdfc
+      <File FileName="GrocerEase/Owner/PromotionPage.xaml" Line="22" Column="32" />
+      <File FileName="GrocerEase/Database Classes/PromotionList.cs" Line="10" Column="24" />
+      <File FileName="GrocerEase/Owner/PromotionPage.xaml.cs" Line="50" Column="38" />
+      <File FileName="GrocerEase/Owner/Inventory.xaml" Line="8" Column="43" />
+      <File FileName="GrocerEase/Owner/Promotions.xaml" Line="24" Column="101" />
+      <File FileName="GrocerEase/Customer/Reminders.xaml" Line="8" Column="61" />
+      <File FileName="Source Not Available" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -36,8 +17,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-<<<<<<< HEAD
-=======
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FA196D94-97B9-43AB-A5C8-D0142FB8EDEE" />
->>>>>>> e7cfbff1fbd8628e5d1a66cfc5ae0bdf3050cdfc
+  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS automaticSigning="False" />
 </Properties>

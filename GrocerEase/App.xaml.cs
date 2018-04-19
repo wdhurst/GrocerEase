@@ -11,6 +11,7 @@ namespace GrocerEase
         static ShoppingListDataBase databaseS;
         static InventoryListDataBase databaseI;
         static ReminderListDataBase databaseR;
+        static PromotionListDataBase databaseP;
 
         public App()
         {
@@ -51,6 +52,18 @@ namespace GrocerEase
                     databaseR = new ReminderListDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("ReminderListSQLite.db3"));
                 }
                 return databaseR;
+            }
+        }
+
+        public static PromotionListDataBase DatabaseP
+        {
+            get
+            {
+                if (databaseP == null)
+                {
+                    databaseP = new PromotionListDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("PromotionListSQLite.db3"));
+                }
+                return databaseP;
             }
         }
 

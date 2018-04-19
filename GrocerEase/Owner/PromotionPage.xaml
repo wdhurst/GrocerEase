@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.Owner.PromotionPage"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+        <Label Text="Item Name"/>
+        <Entry Text="{Binding ItemName}" x:Name="search" Focused="Handle_Focused"/>
+        <Label Text="Percent Off"/>
+        <Entry Text="{Binding Percent}"/>
+         <ListView x:Name="promotionlistview" ItemSelected="Handle_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label Text="Date Sale Ends" />
+        <StackLayout>
+            <DatePicker x:Name="datePick" VerticalOptions="CenterAndExpand"  Date="{x:Binding expDate}">
+            <DatePicker.Format>MM/dd/yyyy</DatePicker.Format>
+            </DatePicker>
+        </StackLayout>
+        <!--<Entry Text="{Binding reminderDate}" Placeholder="M/DD/YYYY"/>-->
+        <Button Text="Save" Clicked="OnSaveClicked" />
+        <Button Text="Delete" Clicked="OnDeleteClicked"/>
+        <Button Text="Cancel" Clicked="OnCancelClicked"/>
+    </StackLayout>
+</ContentPage>
