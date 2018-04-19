@@ -20,7 +20,7 @@ namespace GrocerEase
             imgNotifs.Source = ImageSource.FromResource("GrocerEase.notifications.png");
             imgHome.Source = ImageSource.FromResource("GrocerEase.home.png");
 
-            //Tap Gesture Recognizer  
+            //Tap Gesture Recognizer
             var LayoutTap = new TapGestureRecognizer();
             LayoutTap.Tapped += (sender, e) => {
                 App.Current.MainPage = new NavigationPage(new StoreLayout());
@@ -36,6 +36,11 @@ namespace GrocerEase
                 App.Current.MainPage = new NavigationPage(new Reminders());
             };
             stckNotifs.GestureRecognizers.Add(NotifsTap);
+        }
+
+        void LogOut_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new GrocerEasePage());
         }
 	}
 }
