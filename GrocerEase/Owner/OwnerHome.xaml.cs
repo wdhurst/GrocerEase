@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace GrocerEase.Owner
 {
-    public partial class Promotions : ContentPage
+    public partial class OwnerHome : ContentPage
     {
-        public Promotions()
+        public OwnerHome()
         {
             InitializeComponent();
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
@@ -15,7 +15,7 @@ namespace GrocerEase.Owner
             imgPromos.Source = ImageSource.FromResource("GrocerEase.notifications.png");
             imgHome.Source = ImageSource.FromResource("GrocerEase.home.png");
 
-            //Tap Gesture Recognizer  
+            //Tap Gesture Recognizer
             var OwnerLayoutTap = new TapGestureRecognizer();
             OwnerLayoutTap.Tapped += (sender, e) => {
                 App.Current.MainPage = new NavigationPage(new OwnerStoreLayout());
@@ -26,11 +26,11 @@ namespace GrocerEase.Owner
                 App.Current.MainPage = new NavigationPage(new Inventory());
             };
             stckInventory.GestureRecognizers.Add(InventoryTap);
-            var HomeTap = new TapGestureRecognizer();
-            HomeTap.Tapped += (sender, e) => {
-                App.Current.MainPage = new NavigationPage(new OwnerHome());
+            var PromosTap = new TapGestureRecognizer();
+            PromosTap.Tapped += (sender, e) => {
+                App.Current.MainPage = new NavigationPage(new Promotions());
             };
-            stckHome.GestureRecognizers.Add(HomeTap);
+            stckPromos.GestureRecognizers.Add(PromosTap);
         }
     }
 }

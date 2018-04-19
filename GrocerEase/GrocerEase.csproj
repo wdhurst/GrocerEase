@@ -94,6 +94,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Owner\OwnerHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -148,6 +152,9 @@
     </Compile>
     <Compile Include="Owner\inventoryPage.xaml.cs">
       <DependentUpon>inventoryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Owner\OwnerHome.xaml.cs">
+      <DependentUpon>OwnerHome.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

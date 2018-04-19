@@ -16,26 +16,31 @@ namespace GrocerEase.Owner
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
             imgInventory.Source = ImageSource.FromResource("GrocerEase.inventory.png");
             imgPromos.Source = ImageSource.FromResource("GrocerEase.notifications.png");
+            imgHome.Source = ImageSource.FromResource("GrocerEase.home.png");
 
             UploadButton.Clicked += UploadButton_Clicked;
 
             //Tap Gesture Recognizer  
-            var LayoutTap = new TapGestureRecognizer();
-            LayoutTap.Tapped += (sender, e) => {
-                App.Current.MainPage = new NavigationPage(new OwnerStoreLayout());
-            };
-            stckLayout.GestureRecognizers.Add(LayoutTap);
-            var NewListTap = new TapGestureRecognizer();
-            NewListTap.Tapped += (sender, e) => {
+            var InventoryTap = new TapGestureRecognizer();
+            InventoryTap.Tapped += (sender, e) => {
                 App.Current.MainPage = new NavigationPage(new Inventory());
             };
-            stckInventory.GestureRecognizers.Add(NewListTap);
-            var NotifsTap = new TapGestureRecognizer();
-            NotifsTap.Tapped += (sender, e) => {
+            stckInventory.GestureRecognizers.Add(InventoryTap);
+            var PromosTap = new TapGestureRecognizer();
+            PromosTap.Tapped += (sender, e) => {
                 App.Current.MainPage = new NavigationPage(new Promotions());
             };
+<<<<<<< HEAD
             stckPromos.GestureRecognizers.Add(NotifsTap);
         }
+=======
+            stckPromos.GestureRecognizers.Add(PromosTap);
+            var HomeTap = new TapGestureRecognizer();
+            HomeTap.Tapped += (sender, e) => {
+                App.Current.MainPage = new NavigationPage(new OwnerHome());
+            };
+            stckHome.GestureRecognizers.Add(HomeTap);
+>>>>>>> 7fb98da5e8a0b9cb5d9f2a12588f8773c3d159f9
 
         async void UploadButton_Clicked(object sender, EventArgs e)
         {

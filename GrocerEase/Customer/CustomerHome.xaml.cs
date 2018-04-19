@@ -19,6 +19,7 @@ namespace GrocerEase
             imgLists.Source = ImageSource.FromResource("GrocerEase.lists.png");
             imgNotifs.Source = ImageSource.FromResource("GrocerEase.notifications.png");
             imgHome.Source = ImageSource.FromResource("GrocerEase.home.png");
+            Logout.Clicked += LogOut_Clicked;
 
             //Tap Gesture Recognizer
             var LayoutTap = new TapGestureRecognizer();
@@ -40,7 +41,7 @@ namespace GrocerEase
 
         void LogOut_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new GrocerEasePage());
+            App.Current.MainPage = (new GrocerEasePage());
         }
 	}
 }
