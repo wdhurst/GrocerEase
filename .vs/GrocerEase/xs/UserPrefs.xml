@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<Properties StartupConfiguration="{EAF985EA-B6B3-4AFB-B263-951490268735}|Default">
   <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.FA439SF00197" />
   <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/InventoryListDataBase.cs">
@@ -27,12 +28,16 @@
       <File FileName="GrocerEase/ShoppingListDatabase.cs" Line="52" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+=======
+﻿<Properties StartupConfiguration="{78BFCFBF-5F8E-4D02-8E9D-5F9FF1074AC7}|Default">
+  <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.Workbench />
+>>>>>>> 51da8e476e862afb7f11f01bd61ec672ad90813c
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint hitAction="PrintExpression" traceExpression="reminderDate = {reminderDate.ToString()} current = {current.ToString()}" file="/Users/DEAN/GrocerEase/ReminderListDatabase.cs" relfile="GrocerEase/ReminderListDatabase.cs" line="62" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4EE9ED2E-B385-4FB6-B212-D843DE19D161" />
 </Properties>
