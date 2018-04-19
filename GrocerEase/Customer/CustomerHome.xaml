@@ -6,8 +6,15 @@
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
         <Label Margin="30" Text="My Account" FontSize="35" TextColor="Black"/>
-        <StackLayout Margin="0,100,0,0">
-                <Button Text="Log Out" x:Name="Logout"  BackgroundColor="#535353" TextColor="White" WidthRequest="100"/>
+        <StackLayout Margin="55,110,20,50">
+            <Label Text="Change Email" Margin="0,20,0,0"/>
+            <Entry x:Name="EmailBox" Placeholder="Enter Your New Email"/> 
+            <Label Text="Change Password" Margin="0,25,0,0"/>
+            <Entry x:Name="PasswordBox" Placeholder="Enter a New Password" IsPassword="True"/>
+            <Label Text="Confirm New Password" Margin="0,5,0,0"/>
+            <Entry x:Name="PassConfirmBox" Placeholder="Re-Enter New Password" IsPassword="True"/>
+            <Button Text="Save Changes" Margin="0,5,0,0" BackgroundColor="#ccffd7" TextColor="Black" FontSize="20" WidthRequest="300"/>
+            <Button Text="Log Out" x:Name="Logout" Margin="0,30,0,0" BackgroundColor="#535353" TextColor="White" FontSize="20" WidthRequest="300"/>
         </StackLayout>
         <StackLayout AbsoluteLayout.LayoutBounds="1,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#535353" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckLayout">

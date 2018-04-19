@@ -41,9 +41,6 @@ namespace GrocerEase.Owner
             };
             stckHome.GestureRecognizers.Add(HomeTap);
         }
-<<<<<<< HEAD
-=======
-
         async void permission()
         {
             var cameraStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Camera);
@@ -71,7 +68,6 @@ namespace GrocerEase.Owner
                 //CrossPermissions.Current.OpenAppSettings();
             }
         }
->>>>>>> e7cfbff1fbd8628e5d1a66cfc5ae0bdf3050cdfc
 
         async void UploadButton_Clicked(object sender, EventArgs e)
         {
