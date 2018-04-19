@@ -1,9 +1,12 @@
 ﻿<Properties StartupConfiguration="{78BFCFBF-5F8E-4D02-8E9D-5F9FF1074AC7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Owner/OwnerStoreLayout.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/packages.config">
     <Files>
       <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml" Line="94" Column="1" />
-      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml.cs" Line="39" Column="10" />
+      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml.cs" Line="78" Column="10" />
       <File FileName="packages/Plugin.Permissions.2.2.1/readme.txt" Line="1" Column="1" />
+      <File FileName="Droid/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="Droid/packages.config" Line="1" Column="1" />
+      <File FileName="iOS/packages.config" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
