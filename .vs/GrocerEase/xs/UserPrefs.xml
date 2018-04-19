@@ -1,54 +1,10 @@
-<<<<<<< HEAD
-﻿<Properties StartupConfiguration="{EAF985EA-B6B3-4AFB-B263-951490268735}|Default">
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Owner/CreateAccountOwner.xaml">
-    <Files>
-      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml" Line="14" Column="70" />
-      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml.cs" Line="3" Column="1" />
-      <File FileName="packages/Xam.Plugin.Media.3.1.3/readme.txt" Line="1" Column="1" />
-      <File FileName="GrocerEase/Owner/CreateAccountOwner.xaml" Line="22" Column="1" />
-    </Files>
-=======
-<<<<<<< HEAD
-﻿<Properties StartupConfiguration="{EAF985EA-B6B3-4AFB-B263-951490268735}|Default">
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.FA439SF00197" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/Reminders.xaml">
-    <Files>
-      <File FileName="GrocerEase/Customer/CustomerHome.xaml.cs" Line="44" Column="47" />
-      <File FileName="GrocerEase/Customer/CustomerHome.xaml" Line="87" Column="15" />
-      <File FileName="GrocerEase/Customer/NewList.xaml" Line="105" Column="15" />
-      <File FileName="GrocerEase/Owner/CreateAccountOwner.xaml" Line="22" Column="1" />
-      <File FileName="GrocerEase/Customer/StoreLayout.xaml" Line="33" Column="15" />
-      <File FileName="GrocerEase/Customer/Reminders.xaml" Line="146" Column="15" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="GrocerEase" expanded="True">
-            <Node name="GrocerEase" expanded="True">
-              <Node name="Customer" expanded="True">
-                <Node name="CustomerHome.xaml" expanded="True" />
-                <Node name="NewList.xaml" expanded="True" />
-                <Node name="Reminders.xaml" expanded="True" selected="True" />
-              </Node>
-              <Node name="Owner" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-=======
 ﻿<Properties StartupConfiguration="{78BFCFBF-5F8E-4D02-8E9D-5F9FF1074AC7}|Default">
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/NewList.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Owner/OwnerStoreLayout.xaml.cs">
     <Files>
-      <File FileName="GrocerEase/Owner/Inventory.xaml" Line="8" Column="26" />
-      <File FileName="GrocerEase/Owner/OwnerHome.xaml" Line="88" Column="1" />
-      <File FileName="GrocerEase/Owner/Promotions.xaml" Line="86" Column="1" />
-      <File FileName="GrocerEase/Customer/NewList.xaml" Line="105" Column="15" NotebookId="1" />
+      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml" Line="94" Column="1" />
+      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml.cs" Line="39" Column="10" />
+      <File FileName="packages/Plugin.Permissions.2.2.1/readme.txt" Line="1" Column="1" />
     </Files>
->>>>>>> 268e6f21ef0c8e2a7486deab69c09a57a3362e27
->>>>>>> 7fb98da5e8a0b9cb5d9f2a12588f8773c3d159f9
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -56,8 +12,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-<<<<<<< HEAD
   <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FA196D94-97B9-43AB-A5C8-D0142FB8EDEE" />
-=======
->>>>>>> 7fb98da5e8a0b9cb5d9f2a12588f8773c3d159f9
 </Properties>

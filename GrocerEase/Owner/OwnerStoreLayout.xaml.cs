@@ -2,6 +2,8 @@
 using System.Threading.Tasks;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
+using Plugin.Permissions;
+using Plugin.Permissions.Abstractions;
 using Xamarin.Forms;
 
 namespace GrocerEase.Owner
@@ -22,33 +24,57 @@ namespace GrocerEase.Owner
 
             //Tap Gesture Recognizer  
             var InventoryTap = new TapGestureRecognizer();
-            InventoryTap.Tapped += (sender, e) => {
+            InventoryTap.Tapped += (sender, e) =>
+            {
                 App.Current.MainPage = new NavigationPage(new Inventory());
             };
             stckInventory.GestureRecognizers.Add(InventoryTap);
             var PromosTap = new TapGestureRecognizer();
-            PromosTap.Tapped += (sender, e) => {
+            PromosTap.Tapped += (sender, e) =>
+            {
                 App.Current.MainPage = new NavigationPage(new Promotions());
             };
-<<<<<<< HEAD
-            stckPromos.GestureRecognizers.Add(NotifsTap);
-        }
-=======
             stckPromos.GestureRecognizers.Add(PromosTap);
             var HomeTap = new TapGestureRecognizer();
-            HomeTap.Tapped += (sender, e) => {
+            HomeTap.Tapped += (sender, e) =>
+            {
                 App.Current.MainPage = new NavigationPage(new OwnerHome());
             };
             stckHome.GestureRecognizers.Add(HomeTap);
->>>>>>> 7fb98da5e8a0b9cb5d9f2a12588f8773c3d159f9
+        }
+
+        async void permission()
+        {
+            var cameraStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Camera);
+            var storageStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Storage);
+
+            if (cameraStatus != PermissionStatus.Granted || storageStatus != PermissionStatus.Granted)
+            {
+                var results = await CrossPermissions.Current.RequestPermissionsAsync(new[] { Permission.Camera, Permission.Storage });
+                cameraStatus = results[Permission.Camera];
+                storageStatus = results[Permission.Storage];
+            }
+
+            if (cameraStatus == PermissionStatus.Granted && storageStatus == PermissionStatus.Granted)
+            {
+                var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+                {
+                    Directory = "Sample",
+                    Name = "test.jpg"
+                });
+            }
+            else
+            {
+                await DisplayAlert("Permissions Denied", "Unable to take photos.", "OK");
+                //On iOS you may want to send your user to the settings screen.
+                //CrossPermissions.Current.OpenAppSettings();
+            }
+        }
 
         async void UploadButton_Clicked(object sender, EventArgs e)
         {
             if (CrossMedia.Current.IsPickPhotoSupported)
                 await CrossMedia.Current.PickPhotoAsync();
         }
-
-        //bool IsPickPhotoSupported { get; }
-        //Task<MediaFile> PickPhotoAsync(PickMediaOptions options = null);
     }
 }
