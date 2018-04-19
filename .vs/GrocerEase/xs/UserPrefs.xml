@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{EAF985EA-B6B3-4AFB-B263-951490268735}|Default">
   <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.FA439SF00197" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/addReminder.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/InventoryListDataBase.cs">
     <Files>
       <File FileName="GrocerEase/Owner/Inventory.xaml.cs" Line="28" Column="15" />
       <File FileName="GrocerEase/InventoryListDataBase.cs" Line="61" Column="1" />
@@ -23,7 +23,8 @@
       <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml.cs" Line="14" Column="88" />
       <File FileName="GrocerEase/Owner/Promotions.xaml.cs" Line="22" Column="63" />
       <File FileName="GrocerEase/Customer/addReminder.xaml.cs" Line="13" Column="61" />
-      <File FileName="GrocerEase/Customer/addReminder.xaml" Line="23" Column="42" />
+      <File FileName="GrocerEase/Customer/addReminder.xaml" Line="14" Column="123" />
+      <File FileName="GrocerEase/ShoppingListDatabase.cs" Line="52" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
