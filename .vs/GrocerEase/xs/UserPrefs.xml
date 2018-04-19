@@ -1,6 +1,13 @@
 ﻿<Properties StartupConfiguration="{78BFCFBF-5F8E-4D02-8E9D-5F9FF1074AC7}|Default">
   <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/NewList.xaml">
+    <Files>
+      <File FileName="GrocerEase/Owner/Inventory.xaml" Line="8" Column="26" />
+      <File FileName="GrocerEase/Owner/OwnerHome.xaml" Line="88" Column="1" />
+      <File FileName="GrocerEase/Owner/Promotions.xaml" Line="86" Column="1" />
+      <File FileName="GrocerEase/Customer/NewList.xaml" Line="105" Column="15" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

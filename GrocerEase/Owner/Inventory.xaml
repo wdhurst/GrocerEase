@@ -2,31 +2,38 @@
 <ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.Inventory">
     <AbsoluteLayout Margin="0, 0, 0, 0">
         <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 600, 1">
-            <BoxView HeightRequest="70" BackgroundColor="#40dca0" HorizontalOptions="FillAndExpand" />
+            <BoxView HeightRequest="85" BackgroundColor="#40dca0" HorizontalOptions="FillAndExpand" />
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
-        <Label Margin="25" Text="Inventory List" FontSize="35" TextColor="Black" Grid.Column="0"/>
-        <Button x:Name="addItem" Margin="305, 0, 0, 0" WidthRequest="70" HeightRequest="70" Text="Add Item" BackgroundColor="#ccffd7" TextColor="Black" BorderWidth="2" BorderRadius="0"/>
-        <ListView x:Name="listView" Margin="0, 80, 0, 0" ItemSelected="OnListItemSelected">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <StackLayout Margin="0,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                        <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
-                        <Image Source="GrocerEase.check.png" HorizontalOptions="End" IsVisible="{Binding Price}" />
-                    </StackLayout>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
-        <Button x:Name="deleteList" Text="Clear Inventory" FontSize="24" Margin="100,450,0,0" HorizontalOptions="Center" BackgroundColor="Red" TextColor="Black"/>
-        <StackLayout AbsoluteLayout.LayoutBounds=".20,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#535353" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+        <Label Margin="30" Text="Inventory List" FontSize="35" TextColor="Black" Grid.Column="0"/>
+        <Button x:Name="addItem" WidthRequest="110" HeightRequest="65" Text="Add Item" BackgroundColor="#ccffd7" TextColor="Black" BorderWidth="2" BorderRadius="0">
+             <Button.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="Android" Value="240,20,0,0"/>
+                    <On Platform="iOS" Value="304, 20, 0, 0"/>
+                </OnPlatform>
+            </Button.Margin>
+        </Button>
+        <ListView x:Name="listView" Margin="0, 95, 0, 0" ItemSelected="OnListItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Margin="0,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
+                            <Image Source="GrocerEase.check.png" HorizontalOptions="End" IsVisible="{Binding Price}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="deleteList" Text="Clear" FontSize="24" Margin="281,618,0,0" BackgroundColor="Red" TextColor="Black" WidthRequest="128" CornerRadius="0"/>
+        <StackLayout AbsoluteLayout.LayoutBounds="1,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#535353" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckOwnerLayout">
                 <Image Margin="0,0,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}">
                     <Image.Margin>
                         <OnPlatform x:TypeArguments="Thickness">
-                        <On Platform="iOS" Value="0,10,0,0"/>
-                        <On Platform="Android" Value="0,5,0,0"/>
+                            <On Platform="iOS" Value="0,10,0,0"/>
+                            <On Platform="Android" Value="0,5,0,0"/>
                         </OnPlatform>
                     </Image.Margin>
                 </Image>
@@ -43,8 +50,8 @@
                 <Image Margin="0,0,0,0" x:Name="imgInventory" Style="{StaticResource ButtonNavigationBarImageStyle}">
                     <Image.Margin>
                         <OnPlatform x:TypeArguments="Thickness">
-                        <On Platform="iOS" Value="0,10,0,0"/>
-                        <On Platform="Android" Value="0,5,0,0"/>
+                            <On Platform="iOS" Value="0,10,0,0"/>
+                            <On Platform="Android" Value="0,5,0,0"/>
                         </OnPlatform>
                     </Image.Margin>
                 </Image>
@@ -61,12 +68,30 @@
                 <Image Margin="0,0,0,0" x:Name="imgPromos" Style="{StaticResource ButtonNavigationBarImageStyle}">
                     <Image.Margin>
                         <OnPlatform x:TypeArguments="Thickness">
-                        <On Platform="iOS" Value="0,10,0,0"/>
-                        <On Platform="Android" Value="0,5,0,0"/>
+                            <On Platform="iOS" Value="0,10,0,0"/>
+                            <On Platform="Android" Value="0,5,0,0"/>
                         </OnPlatform>
                     </Image.Margin>
                 </Image>
                 <Label Text="Promotions" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}">
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness">
+                            <On Platform="iOS" Value="0,5,0,0"/>
+                            <On Platform="Android" Value="0,0,0,0"/>
+                        </OnPlatform>
+                    </Label.Margin>
+                </Label>
+            </StackLayout>
+            <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckHome">
+                <Image Margin="0,10,0,0" x:Name="imgHome" Style="{StaticResource ButtonNavigationBarImageStyle}">
+                    <Image.Margin>
+                        <OnPlatform x:TypeArguments="Thickness">
+                            <On Platform="iOS" Value="0,10,0,0"/>
+                            <On Platform="Android" Value="0,5,0,0"/>
+                        </OnPlatform>
+                    </Image.Margin>
+                </Image>
+                <Label Margin="0,5,0,0" Text="Account" TextColor="White" Style="{StaticResource ButtonNavigationBarLabelStyle}">
                     <Label.Margin>
                         <OnPlatform x:TypeArguments="Thickness">
                             <On Platform="iOS" Value="0,5,0,0"/>
