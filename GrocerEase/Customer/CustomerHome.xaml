@@ -5,7 +5,7 @@
             <BoxView HeightRequest="85" BackgroundColor="#40dca0" HorizontalOptions="FillAndExpand" />
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
-        <Label Margin="30" Text="GrocerEase" FontSize="35" TextColor="Black"/>
+        <Label Margin="30" Text="My Account" FontSize="35" TextColor="Black"/>
         <StackLayout Margin="0,100,0,0">
                 <Button Text="Log Out" x:Name="Logout"  BackgroundColor="#535353" TextColor="White" WidthRequest="100"/>
         </StackLayout>
