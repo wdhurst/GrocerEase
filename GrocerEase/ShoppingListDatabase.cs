@@ -51,7 +51,6 @@ namespace GrocerEase
 
         public Task<List<ShoppingList>> DeleteAllAsync()
         {
-            
             database.DropTableAsync<ShoppingList>().Wait();
             database.CreateTableAsync<ShoppingList>().Wait();
             return database.Table<ShoppingList>().ToListAsync();

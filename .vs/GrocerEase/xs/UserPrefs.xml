@@ -1,43 +1,35 @@
-<<<<<<< HEAD
 ﻿<Properties StartupConfiguration="{EAF985EA-B6B3-4AFB-B263-951490268735}|Default">
   <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.FA439SF00197" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/InventoryListDataBase.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/Reminders.xaml">
     <Files>
-      <File FileName="GrocerEase/Owner/Inventory.xaml.cs" Line="28" Column="15" />
-      <File FileName="GrocerEase/InventoryListDataBase.cs" Line="61" Column="1" />
-      <File FileName="GrocerEase/ReminderListDatabase.cs" Line="61" Column="82" />
-      <File FileName="GrocerEase/Customer/itemPage.xaml.cs" Line="14" Column="1" />
-      <File FileName="GrocerEase/Customer/itemPage.xaml" Line="5" Column="75" />
-      <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="GrocerEase/Database Classes/InventoryList.cs" Line="15" Column="42" />
-      <File FileName="GrocerEase/Customer/NewList.xaml.cs" Line="80" Column="27" />
-      <File FileName="GrocerEase/App.xaml.cs" Line="59" Column="24" />
-      <File FileName="GrocerEase/Customer/Reminders.xaml.cs" Line="88" Column="56" />
-      <File FileName="GrocerEase/Customer/Reminders.xaml" Line="23" Column="116" />
-      <File FileName="GrocerEase/Customer/NewList.xaml" Line="77" Column="21" />
-      <File FileName="GrocerEase/obj/Debug/GrocerEase.Customer.NewList.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="GrocerEase/Customer/CustomerHome.xaml.cs" Line="44" Column="47" />
+      <File FileName="GrocerEase/Customer/CustomerHome.xaml" Line="87" Column="15" />
+      <File FileName="GrocerEase/Customer/NewList.xaml" Line="105" Column="15" />
       <File FileName="GrocerEase/Owner/CreateAccountOwner.xaml" Line="22" Column="1" />
-      <File FileName="GrocerEase/Owner/Inventory.xaml" Line="75" Column="36" />
-      <File FileName="GrocerEase/Owner/Promotions.xaml" Line="62" Column="36" />
-      <File FileName="GrocerEase/Customer/CustomerHome.xaml" Line="79" Column="36" />
-      <File FileName="GrocerEase/Customer/CreateAccount.xaml" Line="17" Column="15" />
-      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml.cs" Line="14" Column="88" />
-      <File FileName="GrocerEase/Owner/Promotions.xaml.cs" Line="22" Column="63" />
-      <File FileName="GrocerEase/Customer/addReminder.xaml.cs" Line="13" Column="61" />
-      <File FileName="GrocerEase/Customer/addReminder.xaml" Line="14" Column="123" />
-      <File FileName="GrocerEase/ShoppingListDatabase.cs" Line="52" Column="4" />
+      <File FileName="GrocerEase/Customer/StoreLayout.xaml" Line="33" Column="15" />
+      <File FileName="GrocerEase/Customer/Reminders.xaml" Line="146" Column="15" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GrocerEase" expanded="True">
+            <Node name="GrocerEase" expanded="True">
+              <Node name="Customer" expanded="True">
+                <Node name="CustomerHome.xaml" expanded="True" />
+                <Node name="NewList.xaml" expanded="True" />
+                <Node name="Reminders.xaml" expanded="True" selected="True" />
+              </Node>
+              <Node name="Owner" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
-=======
-﻿<Properties StartupConfiguration="{78BFCFBF-5F8E-4D02-8E9D-5F9FF1074AC7}|Default">
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench />
->>>>>>> 51da8e476e862afb7f11f01bd61ec672ad90813c
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4EE9ED2E-B385-4FB6-B212-D843DE19D161" />
 </Properties>
