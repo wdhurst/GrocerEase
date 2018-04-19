@@ -19,7 +19,6 @@ namespace GrocerEase.Owner
             imgInventory.Source = ImageSource.FromResource("GrocerEase.inventory.png");
             imgPromos.Source = ImageSource.FromResource("GrocerEase.notifications.png");
             imgHome.Source = ImageSource.FromResource("GrocerEase.home.png");
-
             UploadButton.Clicked += UploadButton_Clicked;
 
             //Tap Gesture Recognizer  
@@ -42,6 +41,8 @@ namespace GrocerEase.Owner
             };
             stckHome.GestureRecognizers.Add(HomeTap);
         }
+<<<<<<< HEAD
+=======
 
         async void permission()
         {
@@ -70,6 +71,7 @@ namespace GrocerEase.Owner
                 //CrossPermissions.Current.OpenAppSettings();
             }
         }
+>>>>>>> e7cfbff1fbd8628e5d1a66cfc5ae0bdf3050cdfc
 
         async void UploadButton_Clicked(object sender, EventArgs e)
         {

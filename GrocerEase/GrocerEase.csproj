@@ -156,6 +156,8 @@
     <Compile Include="Owner\OwnerHome.xaml.cs">
       <DependentUpon>OwnerHome.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PromotionListDataBase.cs" />
+    <Compile Include="Database Classes\PromotionList.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SQLite-net">
