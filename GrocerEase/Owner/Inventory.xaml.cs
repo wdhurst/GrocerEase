@@ -24,7 +24,7 @@ namespace GrocerEase
             var OwnerLayoutTap = new TapGestureRecognizer();
             OwnerLayoutTap.Tapped += (sender, e) =>
             {
-                //App.Current.MainPage = new NavigationPage(new OwnerStoreLayout());
+                App.Current.MainPage = new NavigationPage(new Owner.OwnerStoreLayout());
             };
             stckOwnerLayout.GestureRecognizers.Add(OwnerLayoutTap);
             var PromosTap = new TapGestureRecognizer();

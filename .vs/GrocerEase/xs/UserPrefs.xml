@@ -1,46 +1,37 @@
 ﻿<Properties StartupConfiguration="{EAF985EA-B6B3-4AFB-B263-951490268735}|Default">
-<<<<<<< HEAD
   <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.FA439SF00197" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/Reminders.xaml.cs">
-    <Files>
-      <File FileName="GrocerEase/Owner/Inventory.xaml.cs" Line="1" Column="1" />
-      <File FileName="GrocerEase/InventoryListDataBase.cs" Line="59" Column="10" />
-      <File FileName="GrocerEase/ReminderListDatabase.cs" Line="59" Column="7" />
-      <File FileName="GrocerEase/Customer/itemPage.xaml.cs" Line="18" Column="45" />
-      <File FileName="GrocerEase/Customer/itemPage.xaml" Line="5" Column="113" />
-      <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="Droid/Assets/AboutAssets.txt" Line="1" Column="1" />
-      <File FileName="GrocerEase/Database Classes/InventoryList.cs" Line="1" Column="1" />
-      <File FileName="GrocerEase/Customer/NewList.xaml.cs" Line="87" Column="1" />
-      <File FileName="GrocerEase/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="GrocerEase/Customer/Reminders.xaml.cs" Line="71" Column="1" />
-=======
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.VK815e83bb871" />
   <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Customer/addReminder.xaml">
     <Files>
-      <File FileName="GrocerEase/Customer/StoreLayout.xaml" Line="33" Column="15" />
-      <File FileName="GrocerEase/Customer/Reminders.xaml" Line="44" Column="15" />
-      <File FileName="GrocerEase/Customer/addReminder.xaml" Line="4" Column="63" />
-      <File FileName="GrocerEase/Customer/addReminder.xaml.cs" Line="1" Column="1" />
->>>>>>> 2c122981d3c038da28c410ddbaecf62795b20ea4
+      <File FileName="GrocerEase/Owner/Inventory.xaml.cs" Line="28" Column="15" />
+      <File FileName="GrocerEase/InventoryListDataBase.cs" Line="61" Column="1" />
+      <File FileName="GrocerEase/ReminderListDatabase.cs" Line="61" Column="82" />
+      <File FileName="GrocerEase/Customer/itemPage.xaml.cs" Line="14" Column="1" />
+      <File FileName="GrocerEase/Customer/itemPage.xaml" Line="5" Column="75" />
+      <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="GrocerEase/Database Classes/InventoryList.cs" Line="15" Column="42" />
+      <File FileName="GrocerEase/Customer/NewList.xaml.cs" Line="80" Column="27" />
+      <File FileName="GrocerEase/App.xaml.cs" Line="59" Column="24" />
+      <File FileName="GrocerEase/Customer/Reminders.xaml.cs" Line="88" Column="56" />
+      <File FileName="GrocerEase/Customer/Reminders.xaml" Line="23" Column="116" />
+      <File FileName="GrocerEase/Customer/NewList.xaml" Line="77" Column="21" />
+      <File FileName="GrocerEase/obj/Debug/GrocerEase.Customer.NewList.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="GrocerEase/Owner/CreateAccountOwner.xaml" Line="22" Column="1" />
+      <File FileName="GrocerEase/Owner/Inventory.xaml" Line="75" Column="36" />
+      <File FileName="GrocerEase/Owner/Promotions.xaml" Line="62" Column="36" />
+      <File FileName="GrocerEase/Customer/CustomerHome.xaml" Line="79" Column="36" />
+      <File FileName="GrocerEase/Customer/CreateAccount.xaml" Line="17" Column="15" />
+      <File FileName="GrocerEase/Owner/OwnerStoreLayout.xaml.cs" Line="14" Column="88" />
+      <File FileName="GrocerEase/Owner/Promotions.xaml.cs" Line="22" Column="63" />
+      <File FileName="GrocerEase/Customer/addReminder.xaml.cs" Line="13" Column="61" />
+      <File FileName="GrocerEase/Customer/addReminder.xaml" Line="23" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-<<<<<<< HEAD
-      <Breakpoint hitAction="PrintExpression" traceExpression="value of item is {item}" file="/Users/DEAN/GrocerEase/Customer/Reminders.xaml.cs" relfile="GrocerEase/Customer/Reminders.xaml.cs" line="58" column="1" />
-      <Breakpoint hitAction="PrintExpression" traceExpression="value of list = {listView.ItemsSource.ToString()}" file="/Users/DEAN/GrocerEase/Customer/Reminders.xaml.cs" relfile="GrocerEase/Customer/Reminders.xaml.cs" line="90" column="1" />
-=======
-      <Breakpoint hitAction="PrintExpression" traceExpression="value of item is {item}" file="/Users/jaynax3/Documents/GitHub/GrocerEase/GrocerEase/Customer/Reminders.xaml.cs" relfile="GrocerEase/Customer/Reminders.xaml.cs" line="58" column="1" />
-      <Breakpoint hitAction="PrintExpression" traceExpression="value of list = {listView.ItemsSource.ToString()}" file="/Users/jaynax3/Documents/GitHub/GrocerEase/GrocerEase/Customer/Reminders.xaml.cs" relfile="GrocerEase/Customer/Reminders.xaml.cs" line="90" column="1" />
->>>>>>> 2c122981d3c038da28c410ddbaecf62795b20ea4
+      <Breakpoint hitAction="PrintExpression" traceExpression="reminderDate = {reminderDate.ToString()} current = {current.ToString()}" file="/Users/DEAN/GrocerEase/ReminderListDatabase.cs" relfile="GrocerEase/ReminderListDatabase.cs" line="62" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-<<<<<<< HEAD
-=======
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FA196D94-97B9-43AB-A5C8-D0142FB8EDEE" />
->>>>>>> 2c122981d3c038da28c410ddbaecf62795b20ea4
 </Properties>

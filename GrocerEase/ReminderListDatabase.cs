@@ -56,7 +56,7 @@ namespace GrocerEase
             return database.Table<ReminderList>().ToListAsync();
         }
 
-        public Task<List<ReminderList>> timetoBuy(string current)
+        public Task<List<ReminderList>> timetoBuy(DateTime current)
         {
             return database.Table<ReminderList>().Where(i => i.reminderDate == current).ToListAsync();
         }

@@ -48,6 +48,7 @@ namespace GrocerEase
             // Reset the 'resume' id, since we just want to re-start here
             ((App)App.Current).ResumeAtReminderListId = -1;
             listView.ItemsSource = await App.DatabaseR.GetItemsAsync();
+
         }
 
 
@@ -82,13 +83,10 @@ namespace GrocerEase
 
         }
 
-        async void ActiveRems_Clicked(object sender, EventArgs e)
+       async void ActiveRems_Clicked(object sender, EventArgs e)
         {
-            ((App)App.Current).current = DateTime.Today.ToString();
-            string check = ((App)App.Current).current.Remove(9);
-            listView.ItemsSource = await App.DatabaseR.timetoBuy(check);
-            //if (listView.ItemsSource.ToString() != "") Need some way to check that the list is empty and display an alert if it isnt
-                //await DisplayAlert("Reminder", "Theres an item you wanted to purchase today!", "OK"); 
+            ((App)App.Current).current = DateTime.Today;
+            listView.ItemsSource = await App.DatabaseR.timetoBuy(((App)App.Current).current);
         }
 
         async void AllRems_Clicked(object sender, EventArgs e)

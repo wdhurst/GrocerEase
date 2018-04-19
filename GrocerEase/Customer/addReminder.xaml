@@ -3,15 +3,26 @@
              xmlns:sys="clr-namespace:System;assembly=mscorlib">
     <StackLayout Margin="20" VerticalOptions="StartAndExpand">
         <Label Text="Item Name"/>
-        <Entry Text="{Binding itemName}"/>
+        <Entry Text="{Binding itemName}" x:Name="search" Focused="Handle_Focused"/>
+         <ListView x:Name="reminderlistview" ItemSelected="Handle_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
+                            <Label Text="{Binding Brand}" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="24" TextColor="Black"/>
+                            <Label Text="{Binding Price}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" FontSize="24" TextColor="Black"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
         <Label Text="Date of Reminder" />
-        
         <StackLayout>
-            <DatePicker VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Now}">
-            <DatePicker.Format>MM-DD-YYYY</DatePicker.Format>
+            <DatePicker x:Name="datePick" VerticalOptions="CenterAndExpand"  Date="{x:Binding reminderDate}">
+            <DatePicker.Format>MM/dd/yyyy</DatePicker.Format>
             </DatePicker>
         </StackLayout>
-        
         <!--<Entry Text="{Binding reminderDate}" Placeholder="M/DD/YYYY"/>-->
         <Button Text="Save" Clicked="OnSaveClicked" />
         <Button Text="Delete" Clicked="OnDeleteClicked"/>

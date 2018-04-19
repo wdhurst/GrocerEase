@@ -10,6 +10,25 @@ namespace GrocerEase
         public addReminder()
         {
             InitializeComponent();
+            datePick.MinimumDate = DateTime.Now.AddDays(-1);
+        }
+
+        void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+                var item = reminderlistview.SelectedItem;
+                search.Text = item.ToString();
+            }
+        }
+
+        async void Handle_Focused(object sender, Xamarin.Forms.FocusEventArgs e)
+        {
+            while (search.IsFocused)
+            {
+                reminderlistview.ItemsSource = await App.DatabaseI.inInventory(search.Text);
+            }
+            reminderlistview.ItemsSource = null;
         }
 
         async void OnSaveClicked(object sender, EventArgs e)

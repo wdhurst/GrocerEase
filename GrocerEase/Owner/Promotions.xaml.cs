@@ -19,7 +19,7 @@ namespace GrocerEase.Owner
             LayoutTap.Tapped += (sender, e) => {
                 App.Current.MainPage = new NavigationPage(new OwnerStoreLayout());
             };
-            //stckOwnerLayout.GestureRecognizers.Add(OwnerLayoutTap);
+            stckOwnerLayout.GestureRecognizers.Add(LayoutTap);
             var NewListTap = new TapGestureRecognizer();
             NewListTap.Tapped += (sender, e) => {
                 App.Current.MainPage = new NavigationPage(new Inventory());

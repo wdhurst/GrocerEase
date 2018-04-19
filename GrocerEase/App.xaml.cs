@@ -56,7 +56,7 @@ namespace GrocerEase
 
         public int ResumeAtShoppingListId { get; set; }
         public int ResumeAtReminderListId { get; set; }
-        public string current { get; set;}
+        public DateTime current { get; set;}
 
 
         protected override void OnStart()
