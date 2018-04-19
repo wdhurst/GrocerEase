@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-
+using System.Threading.Tasks;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 using Xamarin.Forms;
 
 namespace GrocerEase.Owner
@@ -15,6 +16,8 @@ namespace GrocerEase.Owner
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
             imgInventory.Source = ImageSource.FromResource("GrocerEase.inventory.png");
             imgPromos.Source = ImageSource.FromResource("GrocerEase.notifications.png");
+
+            UploadButton.Clicked += UploadButton_Clicked;
 
             //Tap Gesture Recognizer  
             var LayoutTap = new TapGestureRecognizer();
@@ -32,7 +35,15 @@ namespace GrocerEase.Owner
                 App.Current.MainPage = new NavigationPage(new Promotions());
             };
             stckPromos.GestureRecognizers.Add(NotifsTap);
-
         }
+
+        async void UploadButton_Clicked(object sender, EventArgs e)
+        {
+            if (CrossMedia.Current.IsPickPhotoSupported)
+                await CrossMedia.Current.PickPhotoAsync();
+        }
+
+        //bool IsPickPhotoSupported { get; }
+        //Task<MediaFile> PickPhotoAsync(PickMediaOptions options = null);
     }
 }

@@ -10,6 +10,9 @@
                     <Image x:Name="imgDirectory" HorizontalOptions="Center" />
                 </StackLayout>
             </StackLayout>
+            <StackLayout>
+                <Button x:Name="UploadButton" Text="Upload a Picture" FontSize="18" TextColor="White" BackgroundColor="#535353" />
+            </StackLayout>
         </ScrollView>
 
         <StackLayout AbsoluteLayout.LayoutBounds="1,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#535353" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
