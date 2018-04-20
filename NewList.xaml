@@ -13,11 +13,12 @@
                 <ViewCell>
                     <StackLayout Margin="0,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                         <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
-                        <Image Source="GrocerEase.check.png" HorizontalOptions="End" IsVisible="{Binding InCart}" />
+                        <Switch IsToggled="{Binding ItemName}" HorizontalOptions="End"/>
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
+        </ListView>
         <Button x:Name="inCart" Text="Items In Cart" FontSize="24" BackgroundColor="Aqua" TextColor="Black" CornerRadius="0">
             <Button.Margin>
                 <OnPlatform x:TypeArguments="Thickness">
