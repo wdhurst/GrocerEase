@@ -20,6 +20,7 @@ namespace GrocerEase
             //imgItem.Source = ImageSource.FromResource("GrocerEase.new-list.png");
             //checkImg.Source = ImageSource.FromResource("GrocerEase.check.png");
 
+            inCart.HeightRequest = allItems.Height;
 
             //Tap Gesture Recognizer  
             var LayoutTap = new TapGestureRecognizer();
