@@ -16,8 +16,11 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+<<<<<<< HEAD
         <Label Text="In Cart" Margin="0,20,0,0"/>
         <Switch IsToggled="{Binding InCart}"/>
+=======
+>>>>>>> f3d6fa067962a0398cece6126960212c282fa1bd
         <Button Text="Save" FontSize="20" Margin="0,20,0,50" Clicked="OnSaveClicked" TextColor="Black" BackgroundColor="#ccffd7"/>
         <Button Text="Delete" FontSize="18" Clicked="OnDeleteClicked" TextColor="White" BackgroundColor="#535353"/>
         <Button Text="Cancel" FontSize="18" Clicked="OnCancelClicked" TextColor="White" BackgroundColor="#535353"/>

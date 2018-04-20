@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<Properties StartupConfiguration="{EAF985EA-B6B3-4AFB-B263-951490268735}|Default">
   <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.FA439SF00197" />
   <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/ShoppingListDatabase.cs">
@@ -27,11 +28,16 @@
       <File FileName="GrocerEase/ShoppingListDatabase.cs" Line="24" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+=======
+﻿<Properties StartupConfiguration="{78BFCFBF-5F8E-4D02-8E9D-5F9FF1074AC7}|Default">
+  <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.Workbench />
+>>>>>>> f3d6fa067962a0398cece6126960212c282fa1bd
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4EE9ED2E-B385-4FB6-B212-D843DE19D161" automaticSigning="False" />
 </Properties>

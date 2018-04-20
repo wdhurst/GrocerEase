@@ -20,7 +20,7 @@
                     <ViewCell>
                         <StackLayout Margin="0,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                             <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
-                            <Label HorizontalOptions="End" Text="{Binding Price}" />
+                            <Label HorizontalOptions="End" Text="{Binding Price, StringFormat='${0:N}'}"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

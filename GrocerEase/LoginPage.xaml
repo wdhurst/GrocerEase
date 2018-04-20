@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage BackgroundColor="#FFFFFF" NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.LoginPage">
+<ContentPage BackgroundColor="#888888" NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GrocerEase.LoginPage">
     <StackLayout Margin="20,50,20,50">
-        <Label Text="GrocerEase" HorizontalOptions="Center" FontSize="45" Margin="0,0,0,50"></Label>
+        <Label Text="GrocerEase" BackgroundColor="#40dca0" HorizontalTextAlignment="Center" WidthRequest="800" HorizontalOptions="Center" FontSize="45"></Label>
+        <Image x:Name="imgLight" WidthRequest="150" HeightRequest="150" Margin="0,0,0,30"/>
         <Label Text="Email"></Label>
         <Entry Placeholder="Enter Your Email" x:Name="EmailEntry"></Entry>
         <Label Text="Password"></Label>
@@ -12,7 +13,4 @@
         <Button Text="Sign up as Customer" x:Name="CustmerSignUp" FontSize="18" TextColor="White" BackgroundColor="#535353"></Button>
         <Button Text="Sign up as Business" x:Name="OwnerSignUp" FontSize="18" TextColor="White" BackgroundColor="#535353"></Button>
     </StackLayout>
-    <!--<StackLayout>
-        <Image Source="{local:ImageResource GrocerEase.cart-dark.png}" />
-    </StackLayout>-->
 </ContentPage>
