@@ -4,7 +4,8 @@
     
 <ContentPage NavigationPage.HasNavigationBar="false" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GrocerEase" x:Class="GrocerEase.GrocerEasePage">
     <StackLayout Margin="20,50,20,50">
-        <Label Text="GrocerEase" HorizontalOptions="Center" FontSize="45" Margin="0,0,0,75"></Label>
+        <Label Text="GrocerEase" BackgroundColor="#40dca0" HorizontalTextAlignment="Center" WidthRequest="800" HorizontalOptions="Center" FontSize="45"></Label>
+        <Image x:Name="imgDark"  WidthRequest="150" HeightRequest="150" Margin="0,0,0,30"/>
         <Label Text="You are currently not logged in." HorizontalTextAlignment="Center" Margin="0,0,0,25" FontSize="20"></Label>
         <Button Text="Login" x:Name="LogIn" FontSize="30" TextColor="Black" BackgroundColor="#ccffd7"></Button>
         <Label Text="Create an account:" HorizontalTextAlignment="Center" Margin="0,60,0,15" FontSize="25"></Label>

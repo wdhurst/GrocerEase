@@ -27,6 +27,8 @@ namespace GrocerEase
             CustmerSignUp.Clicked += CustmerSignUp_Clicked; 
             LogIn.Clicked += LogIn_Clicked;
             OwnerSignUp.Clicked += OwnerSignUp_Clicked;
+            imgDark.Source = ImageSource.FromResource("GrocerEase.cart-dark.png");
+
         }
     }
 }

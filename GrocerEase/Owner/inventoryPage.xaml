@@ -4,7 +4,7 @@
         <Label Text="Item Name"/>
         <Entry Text="{Binding ItemName}"/>
         <Label Text="Price" />
-        <Entry Text="{Binding Price}" />
+        <Entry Text="{Binding Price, StringFormat='${0:N}'}" />
         <Label Text="Category"/>
         <Entry Text="{Binding Category}"/>
         <Label Text="Brand"/>
