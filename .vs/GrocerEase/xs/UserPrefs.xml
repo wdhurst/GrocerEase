@@ -1,30 +1,11 @@
-﻿<Properties StartupConfiguration="{EAF985EA-B6B3-4AFB-B263-951490268735}|Default">
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.FA439SF00197" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GrocerEase/Owner/PromotionPage.xaml">
-    <Files>
-      <File FileName="GrocerEase/Owner/PromotionPage.xaml.cs" Line="44" Column="31" />
-      <File FileName="GrocerEase/Owner/Inventory.xaml" Line="23" Column="35" />
-      <File FileName="GrocerEase/Owner/Promotions.xaml" Line="22" Column="29" />
-      <File FileName="GrocerEase/Owner/Promotions.xaml.cs" Line="69" Column="43" />
-      <File FileName="GrocerEase/Owner/Inventory.xaml.cs" Line="36" Column="13" />
-      <File FileName="GrocerEase/PromotionListDataBase.cs" Line="49" Column="9" />
-      <File FileName="GrocerEase/ReminderListDatabase.cs" Line="65" Column="1" />
-      <File FileName="GrocerEase/Customer/Reminders.xaml" Line="70" Column="103" />
-      <File FileName="GrocerEase/Customer/Reminders.xaml.cs" Line="106" Column="45" />
-      <File FileName="GrocerEase/Database Classes/PromotionList.cs" Line="15" Column="54" />
-      <File FileName="Source Not Available" />
-      <File FileName="GrocerEase/obj/Debug/GrocerEase.Customer.Reminders.xaml.g.cs" Line="1" Column="1" />
-      <File FileName="GrocerEase/Customer/itemPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="GrocerEase/Customer/itemPage.xaml" Line="11" Column="29" />
-      <File FileName="GrocerEase/Customer/addReminder.xaml" Line="12" Column="29" />
-      <File FileName="GrocerEase/Owner/PromotionPage.xaml" Line="14" Column="179" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{78BFCFBF-5F8E-4D02-8E9D-5F9FF1074AC7}|Default">
+  <MonoDevelop.Ide.ItemProperties.GrocerEase.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.GrocerEase.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4EE9ED2E-B385-4FB6-B212-D843DE19D161" automaticSigning="False" />
 </Properties>
