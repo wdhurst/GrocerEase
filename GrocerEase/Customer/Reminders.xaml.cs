@@ -46,9 +46,9 @@ namespace GrocerEase
         {
             base.OnAppearing();
             // Reset the 'resume' id, since we just want to re-start here
+            SaleListView.ItemsSource = null;
             ((App)App.Current).ResumeAtReminderListId = -1;
             listView.ItemsSource = await App.DatabaseR.GetItemsAsync();
-
         }
 
 
@@ -62,11 +62,9 @@ namespace GrocerEase
 
         async void DeleteList_Clicked(object sender, EventArgs e)
         {
-            //if (App.Database.allInCart())
-            listView.ItemsSource = await App.DatabaseR.DeleteAllAsync();
-            //else
-            //  await DisplayAlert("Error", "Not all items in cart, clear list anyways?", "Yes", "No");
-
+            ((App)App.Current).ResumeAtPromotionId = -1;
+            listView.ItemsSource = null;
+            SaleListView.ItemsSource = await App.DatabaseP.GetItemsAsync();
         }
 
         async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -83,15 +81,29 @@ namespace GrocerEase
 
         }
 
+        void OnSaleListItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if(e.SelectedItem != null)
+            {
+                BindingContext = e.SelectedItem as PromotionList;
+                var item = (PromotionList)BindingContext;
+                var message = item.ToString();
+                DisplayAlert("SALE", message, "OK");
+            }
+
+        }
+
        async void ActiveRems_Clicked(object sender, EventArgs e)
         {
             ((App)App.Current).current = DateTime.Today;
+            SaleListView.ItemsSource = null;
             listView.ItemsSource = await App.DatabaseR.timetoBuy(((App)App.Current).current);
         }
 
         async void AllRems_Clicked(object sender, EventArgs e)
         {
             ((App)App.Current).ResumeAtReminderListId = -1;
+            SaleListView.ItemsSource = null;
             listView.ItemsSource = await App.DatabaseR.GetItemsAsync();
 
         }

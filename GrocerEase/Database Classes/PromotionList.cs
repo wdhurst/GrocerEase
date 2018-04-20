@@ -6,14 +6,13 @@ namespace GrocerEase
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
-        public string SaleName { get; set; }
         public string ItemName { get; set; }
         public DateTime expDate { get; set; }
         public int Percent { get; set; }
 
         public override string ToString()
         {
-            return string.Format("Sale on {0} for {1)% off!", ItemName,Percent);
+            return string.Format("Sale on {0} for {1}% off until {2:d}!", ItemName,Percent,expDate);
         }
     }
 }

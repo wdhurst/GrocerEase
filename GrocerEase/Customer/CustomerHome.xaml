@@ -6,7 +6,13 @@
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
         <Label Margin="30" Text="My Account" FontSize="35" TextColor="Black"/>
-        <StackLayout Margin="55,110,20,50">
+        <StackLayout>
+            <StackLayout.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="55,110,20,50"/>
+                    <On Platform="Android" Value="30,75,10,25"/>
+                </OnPlatform>
+            </StackLayout.Margin>
             <Label Text="Change Email" Margin="0,20,0,0"/>
             <Entry x:Name="EmailBox" Placeholder="Enter Your New Email"/> 
             <Label Text="Change Password" Margin="0,25,0,0"/>

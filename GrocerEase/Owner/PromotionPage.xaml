@@ -4,19 +4,21 @@
     <StackLayout Margin="20" VerticalOptions="StartAndExpand">
         <Label Text="Item Name"/>
         <Entry Text="{Binding ItemName}" x:Name="search" Focused="Handle_Focused"/>
-        <Label Text="Percent Off"/>
-        <Entry Text="{Binding Percent}"/>
          <ListView x:Name="promotionlistview" ItemSelected="Handle_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout>
+                        <StackLayout Orientation="Horizontal">
                             <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
+                            <Label Text="{Binding Brand}" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="24"/>
+                            <Label Text="{Binding Price, StringFormat='${0:N}'}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" FontSize="24" TextColor="Black"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Label Text="Percent Off"/>
+        <Entry Text="{Binding Percent}"/>
         <Label Text="Date Sale Ends" />
         <StackLayout>
             <DatePicker x:Name="datePick" VerticalOptions="CenterAndExpand"  Date="{x:Binding expDate}">

@@ -69,6 +69,8 @@ namespace GrocerEase
 
         public int ResumeAtShoppingListId { get; set; }
         public int ResumeAtReminderListId { get; set; }
+        public int ResumeAtInventoryId { get; set; }
+        public int ResumeAtPromotionId { get; set; }
         public DateTime current { get; set;}
 
 

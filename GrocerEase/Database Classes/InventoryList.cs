@@ -8,7 +8,7 @@ namespace GrocerEase
         public string ItemName { get; set; }
         public string Brand { get; set; }
         public string Category { get; set; }
-        public int Price { get; set; }
+        public double Price { get; set; }
 
         public override string ToString()
         {

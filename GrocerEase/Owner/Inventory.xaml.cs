@@ -12,14 +12,10 @@ namespace GrocerEase
         {
             InitializeComponent();
             addItem.Clicked += AddItem_Clicked;
-            deleteList.Clicked += DeleteList_Clicked;
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
             imgInventory.Source = ImageSource.FromResource("GrocerEase.inventory.png");
             imgPromos.Source = ImageSource.FromResource("GrocerEase.notifications.png");
             imgHome.Source = ImageSource.FromResource("GrocerEase.home.png");
-            //imgItem.Source = ImageSource.FromResource("GrocerEase.new-list.png");
-            //checkImg.Source = ImageSource.FromResource("GrocerEase.check.png");
-
 
             //Tap Gesture Recognizer  
             var OwnerLayoutTap = new TapGestureRecognizer();
@@ -44,7 +40,7 @@ namespace GrocerEase
         {
             base.OnAppearing();
             // Reset the 'resume' id, since we just want to re-start here
-            ((App)App.Current).ResumeAtShoppingListId = -1;
+            ((App)App.Current).ResumeAtInventoryId = -1;
             listView.ItemsSource = await App.DatabaseI.GetItemsAsync();
         }
 
@@ -56,22 +52,13 @@ namespace GrocerEase
             });
         }
 
-        async void DeleteList_Clicked(object sender, EventArgs e)
-        {
-            //if (App.Database.allInCart())
-            listView.ItemsSource = await App.DatabaseI.DeleteAllAsync();
-            //else
-            //  await DisplayAlert("Error", "Not all items in cart, clear list anyways?", "Yes", "No");
-
-        }
-
         async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             //((App)App.Current).ResumeAtTodoId = (e.SelectedItem as TodoItem).ID;
             //Debug.WriteLine("setting ResumeAtTodoId = " + (e.SelectedItem as TodoItem).ID);
             if (e.SelectedItem != null)
             {
-                await Navigation.PushAsync(new itemPage()
+                await Navigation.PushModalAsync(new inventoryPage()
                 {
                     BindingContext = e.SelectedItem as InventoryList
                 });

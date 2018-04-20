@@ -46,6 +46,7 @@ namespace GrocerEase
         {
             return database.DeleteAsync(item);
         }
+
         public Task<List<PromotionList>> DeleteAllAsync()
         {
 
@@ -56,6 +57,11 @@ namespace GrocerEase
         public Task<List<PromotionList>> inInventory(string current)
         {
             return database.Table<PromotionList>().Where(i => i.ItemName.Contains(current)).ToListAsync();
+        }
+
+        public void checkDate(DateTime date)
+        {
+            database.ExecuteAsync("DELETE * WHERE [expDate] < ", date);   
         }
 
 

@@ -46,9 +46,9 @@ namespace GrocerEase
         {
             return database.DeleteAsync(item);
         }
+
         public Task<List<InventoryList>> DeleteAllAsync()
         {
-
             database.DropTableAsync<InventoryList>().Wait();
             database.CreateTableAsync<InventoryList>().Wait();
             return database.Table<InventoryList>().ToListAsync();

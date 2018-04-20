@@ -37,7 +37,9 @@ namespace GrocerEase.Owner
         {
             base.OnAppearing();
             // Reset the 'resume' id, since we just want to re-start here
-            ((App)App.Current).ResumeAtShoppingListId = -1;
+            ((App)App.Current).ResumeAtPromotionId = -1;
+            DateTime checkPastDue = DateTime.Today;
+            App.DatabaseP.checkDate(checkPastDue);
             listView.ItemsSource = await App.DatabaseP.GetItemsAsync();
         }
 
@@ -64,7 +66,7 @@ namespace GrocerEase.Owner
             //Debug.WriteLine("setting ResumeAtTodoId = " + (e.SelectedItem as TodoItem).ID);
             if (e.SelectedItem != null)
             {
-                await Navigation.PushAsync(new PromotionPage()
+                await Navigation.PushModalAsync(new PromotionPage()
                 {
                     BindingContext = e.SelectedItem as PromotionList
                 });

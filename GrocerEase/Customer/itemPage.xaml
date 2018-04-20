@@ -7,10 +7,10 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout>
+                        <StackLayout Orientation="Horizontal">
                             <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
-                            <Label Text="{Binding Brand}" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="24" TextColor="Black"/>
-                            <Label Text="{Binding Price}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" FontSize="24" TextColor="Black"/>
+                            <Label Text="{Binding Brand}" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="24"/>
+                            <Label Text="{Binding Price, StringFormat='${0:N}'}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" FontSize="24" TextColor="Black"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

@@ -20,13 +20,12 @@
                     <ViewCell>
                         <StackLayout Margin="0,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                             <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
-                            <Image Source="GrocerEase.check.png" HorizontalOptions="End" Text="{Binding Price}" />
+                            <Label HorizontalOptions="End" Text="{Binding Price}" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="deleteList" Text="Clear" FontSize="24" Margin="281,618,0,0" BackgroundColor="Red" TextColor="Black" WidthRequest="128" CornerRadius="0"/>
         <StackLayout AbsoluteLayout.LayoutBounds="1,1,1,.1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#535353" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <StackLayout Style="{StaticResource ButtonNavigationBarStackLayoutStyle}" x:Name="stckOwnerLayout">
                 <Image Margin="0,0,0,0" x:Name="imgLogo" Style="{StaticResource ButtonNavigationBarImageStyle}">

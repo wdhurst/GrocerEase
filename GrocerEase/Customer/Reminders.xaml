@@ -5,7 +5,7 @@
             <BoxView HeightRequest="85" BackgroundColor="#40dca0" HorizontalOptions="FillAndExpand" />
             <BoxView HeightRequest="2" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
         </StackLayout>
-        <Label x:Name="topLabel" Margin="30" Text="Reminders" FontSize="35" TextColor="Black" Grid.Column="0"/>
+        <Label x:Name="topLabel" Margin="30" Text="Notifications" FontSize="35" TextColor="Black" Grid.Column="0"/>
         <Button x:Name="addItem" WidthRequest="110" HeightRequest="65" Text="Add Reminder" BackgroundColor="#ccffd7" TextColor="Black" BorderWidth="2" BorderRadius="0">
             <Button.Margin>
                 <OnPlatform x:TypeArguments="Thickness">
@@ -21,6 +21,19 @@
                         <StackLayout Margin="0,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                             <Label Text="{Binding itemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
                             <Label HorizontalOptions="End" Text="{Binding reminderDate, StringFormat='{0:MM/dd/yyyy}'}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView x:Name="SaleListView" Margin="0, 95, 0, 0" ItemSelected="OnSaleListItemSelected" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Margin="0,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <Label Text="{Binding ItemName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" FontSize="24" TextColor="Black"/>
+                            <Label Text="{Binding Percent, StringFormat='{0:N}% off'}" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Center"/>
+                            <Label VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" Text="{Binding expDate, StringFormat='Expires: {0:MM/dd/yyyy}'}"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
@@ -54,7 +67,7 @@
                 </OnPlatform>
             </Button.WidthRequest>
         </Button>
-        <Button x:Name="deleteList" Text="Clear" FontSize="24" BackgroundColor="Red" TextColor="Black" WidthRequest="128" CornerRadius="0">
+        <Button x:Name="deleteList" Text="Sales!" FontSize="24" BackgroundColor="Red" TextColor="White" WidthRequest="128" CornerRadius="0">
              <Button.Margin>
                 <OnPlatform x:TypeArguments="Thickness">
                 <On Platform="iOS" Value="281,618,0,0"/>
