@@ -46,12 +46,12 @@ namespace GrocerEase
         {
             base.OnAppearing();
             // Reset the 'resume' id, since we just want to re-start here
-            SaleListView.ItemsSource = null;
+            Thickness Margin = SaleListView.Margin;
+            Margin.Top = 1000;
+            SaleListView.Margin = Margin;
             ((App)App.Current).ResumeAtReminderListId = -1;
             listView.ItemsSource = await App.DatabaseR.GetItemsAsync();
         }
-
-
         async void AddItem_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new addReminder()
@@ -59,14 +59,15 @@ namespace GrocerEase
                 BindingContext = new ReminderList()
             });
         }
-
         async void DeleteList_Clicked(object sender, EventArgs e)
         {
             ((App)App.Current).ResumeAtPromotionId = -1;
             listView.ItemsSource = null;
+            Thickness Margin = SaleListView.Margin;
+            Margin.Top = 95;
+            SaleListView.Margin = Margin;
             SaleListView.ItemsSource = await App.DatabaseP.GetItemsAsync();
         }
-
         async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             //((App)App.Current).ResumeAtTodoId = (e.SelectedItem as TodoItem).ID;
@@ -80,7 +81,6 @@ namespace GrocerEase
             }
 
         }
-
         void OnSaleListItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if(e.SelectedItem != null)
@@ -90,22 +90,22 @@ namespace GrocerEase
                 var message = item.ToString();
                 DisplayAlert("SALE", message, "OK");
             }
-
         }
-
        async void ActiveRems_Clicked(object sender, EventArgs e)
         {
             ((App)App.Current).current = DateTime.Today;
-            SaleListView.ItemsSource = null;
+            Thickness Margin = SaleListView.Margin;
+            Margin.Top = 1000;
+            SaleListView.Margin = Margin;
             listView.ItemsSource = await App.DatabaseR.timetoBuy(((App)App.Current).current);
         }
 
         async void AllRems_Clicked(object sender, EventArgs e)
         {
-            ((App)App.Current).ResumeAtReminderListId = -1;
-            SaleListView.ItemsSource = null;
+            Thickness Margin = SaleListView.Margin;
+            Margin.Top = 1000;
+            SaleListView.Margin = Margin;
             listView.ItemsSource = await App.DatabaseR.GetItemsAsync();
-
         }
     }
 }
