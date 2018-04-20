@@ -21,12 +21,10 @@ namespace GrocerEase
             return database.Table<ShoppingList>().ToListAsync();
         }
 
-        /*public bool allInCart()
+        public Task<List<ShoppingList>> allInCart(bool inCart)
         {
-            database.QueryAsync<ShoppingList>("SELECT * FROM [ItemName] WHERE [InCart] = 0");
-            would like to get this to check that all items have been checked but cant figure it out at the moment
-
-        }*/
+            return database.Table<ShoppingList>().Where(i => i.InCart == inCart).ToListAsync();
+        }
         public Task<ShoppingList> GetItemAsync(int id)
         {
             return database.Table<ShoppingList>().Where(i => i.ID == id).FirstOrDefaultAsync();

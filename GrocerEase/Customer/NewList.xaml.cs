@@ -13,6 +13,8 @@ namespace GrocerEase
             InitializeComponent();
             addItem.Clicked += AddItem_Clicked;
             deleteList.Clicked += DeleteList_Clicked;
+            inCart.Clicked += InCart_Clicked;
+            allItems.Clicked += AllItems_Clicked;
             imgLogo.Source = ImageSource.FromResource("GrocerEase.store.png");
             imgLists.Source = ImageSource.FromResource("GrocerEase.lists.png");
             imgNotifs.Source = ImageSource.FromResource("GrocerEase.notifications.png");
@@ -52,6 +54,18 @@ namespace GrocerEase
             ((App)App.Current).ResumeAtShoppingListId = -1;
             listView.ItemsSource = await App.DatabaseS.GetItemsAsync();
         }
+
+        async void InCart_Clicked(object sender, EventArgs e)
+        {
+            bool inCart = false;
+            listView.ItemsSource = await App.DatabaseS.allInCart(inCart);
+        }
+
+        async void AllItems_Clicked(object sender, EventArgs e)
+        {
+            listView.ItemsSource = await App.DatabaseS.GetItemsAsync();
+        }
+
 
         async void AddItem_Clicked(object sender, EventArgs e)
         {

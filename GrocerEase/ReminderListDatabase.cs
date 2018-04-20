@@ -23,7 +23,7 @@ namespace GrocerEase
 
         public Task<List<ReminderList>> CheckRemindersAsync()
         {
-            return database.QueryAsync<ReminderList>("SELECT * FROM [ItemName] WHERE [reminderDate] = 0");
+            return database.QueryAsync<ReminderList>("SELECT * FROM [ItemName] WHERE [reminderDate] = true");
         }
 
         public Task<ReminderList> GetItemAsync(int id)
