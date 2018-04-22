@@ -34,19 +34,19 @@ namespace GrocerEase
         {
             var item = (ShoppingList)BindingContext;
             await App.DatabaseS.SaveItemAsync(item);
-            await Navigation.PopAsync();
+            await Navigation.PopModalAsync();
         }
 
         async void OnDeleteClicked(object sender, EventArgs e)
         {
             var item = (ShoppingList)BindingContext;
             await App.DatabaseS.DeleteItemAsync(item);
-            await Navigation.PopAsync();
+            await Navigation.PopModalAsync();
         }
 
         async void OnCancelClicked(object sender, EventArgs e)
         {
-            await Navigation.PopAsync();
+            await Navigation.PopModalAsync();
         }
 
     }

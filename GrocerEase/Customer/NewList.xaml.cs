@@ -58,18 +58,20 @@ namespace GrocerEase
         async void InCart_Clicked(object sender, EventArgs e)
         {
             bool inCart = false;
+            ((App)App.Current).ResumeAtShoppingListId = -1;
             listView.ItemsSource = await App.DatabaseS.allInCart(inCart);
         }
 
         async void AllItems_Clicked(object sender, EventArgs e)
         {
+            ((App)App.Current).ResumeAtShoppingListId = -1;
             listView.ItemsSource = await App.DatabaseS.GetItemsAsync();
         }
 
 
         async void AddItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new itemPage()
+            await Navigation.PushModalAsync(new itemPage()
             {
                 BindingContext = new ShoppingList()
             });
@@ -90,7 +92,7 @@ namespace GrocerEase
             //Debug.WriteLine("setting ResumeAtTodoId = " + (e.SelectedItem as TodoItem).ID);
             if (e.SelectedItem != null)
             {
-                await Navigation.PushAsync(new itemPage()
+                await Navigation.PushModalAsync(new itemPage()
                 {
                     BindingContext = e.SelectedItem as ShoppingList
                 });
